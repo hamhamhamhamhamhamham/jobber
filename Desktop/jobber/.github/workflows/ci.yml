@@ -1,4 +1,4 @@
-name: y
+name: CI
 
 on:
   push:
