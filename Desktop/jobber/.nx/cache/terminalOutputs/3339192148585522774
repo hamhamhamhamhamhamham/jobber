@@ -1,0 +1,491 @@
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 78ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 8.54 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (6c0bfca4a4020617)
+
+
+
+[0m[7m[1m[32m NX [39m[22m[27m[0m  [32mSuccessfully ran target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on[39m
+
+
+[1m[31mDebugger listening on ws://localhost:9229/0c203dda-8134-4876-af30-e21fc4487ecc[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +27ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +46ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +59ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGraphQLSchemaBuilderModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGraphQLModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[GraphQLModule] [39m[32mMapped {/graphql, POST} route[39m[38;5;3m +387ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[32m[Nest] 4192  - [39m08/31/2025, 12:09:53 PM [32m    LOG[39m [32m🚀 Application is running on: http://localhost:3000/api[39m
+[1m[31m[31m[Nest] 4192  - [39m[31m08/31/2025, 12:12:50 PM [31m  ERROR[39m[31m [38;5;3m[ExceptionsHandler] [39m[31mPrismaClientKnownRequestError: [39m[22m
+[1m[31mInvalid `prisma.user.create()` invocation:[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mUnique constraint failed on the fields: (`email`)[39m[22m
+[1m[31m    at ei.handleRequestError [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mnode_modules\[4m@prisma-clients[24m\jobber-auth\runtime\library.js:124:7283[90m)[39m[31m[39m[22m
+[1m[31m    at ei.handleAndLogRequestError [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mnode_modules\[4m@prisma-clients[24m\jobber-auth\runtime\library.js:124:6608[90m)[39m[31m[39m[22m
+[1m[31m    at ei.request [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mnode_modules\[4m@prisma-clients[24m\jobber-auth\runtime\library.js:124:6315[90m)[39m[31m[39m[22m
+[1m[31m    at a [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mnode_modules\[4m@prisma-clients[24m\jobber-auth\runtime\library.js:133:9551[90m)[39m[31m[39m[22m
+[1m[31m    at UsersService.createUser [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mdist\apps\jobber-auth\webpack:\src\app\users\users.service.ts:11:15[90m)[39m[31m[39m[22m
+[1m[31m    at UsersResolver.createUser [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mdist\apps\jobber-auth\webpack:\src\app\users\users.resolver.ts:12:15[90m)[39m[31m[39m[22m
+[1m[31m    at target [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mnode_modules\[4m@nestjs[24m\core\helpers\external-context-creator.js:74:28[90m)[39m[31m[39m[22m
+[1m[31m    at Object.createUser [90m(C:\Users\ASUS\Desktop\jobber\[39m[31mnode_modules\[4m@nestjs[24m\core\helpers\external-proxy.js:9:24[90m)[39m[31m {[39m[22m
+[1m[31m  code: [32m'P2002'[39m[31m,[39m[22m
+[1m[31m  meta: {[39m[22m
+[1m[31m    modelName: [32m'User'[39m[31m,[39m[22m
+[1m[31m    target: [[39m[22m
+[1m[31m      [32m'email'[39m[31m[39m[22m
+[1m[31m    ][39m[22m
+[1m[31m  },[39m[22m
+[1m[31m  clientVersion: [32m'6.15.0'[39m[31m[39m[22m
+[1m[31m}[39m[22m
+[1m[31m[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+[1m[31mError: [39m[22m
+EBUSY: resource busy or locked, copyfile 'C:\Users\ASUS\Desktop\jobber\node_modules\@prisma\client\runtime\index-browser.d.ts' -> 'C:\Users\ASUS\Desktop\jobber\node_modules\@prisma-clients\jobber-auth\runtime\index-browser.d.ts'
+
+
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 176ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+Warning: command "prisma generate" exited with non-zero status code
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on failed[39m
+
+[2mFailed tasks:[22m
+
+[2m-[22m jobber-auth:generate-types
+
+[2mHint: run the command with[22m --verbose [2mfor more details.[22m
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 111ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 452ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 218ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 8.57 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b9d7cdda21ce5564)
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+
+
+[0m[7m[1m[32m NX [39m[22m[27m[0m  [32mSuccessfully ran target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on[39m
+
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[1m[31mDebugger listening on ws://localhost:9229/fd075ac6-1221-48ae-86f0-92eb07ced699[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[1m[31mError: Cannot find module 'C:\Users\ASUS\Desktop\jobber\dist\apps\jobber-auth\main.js' imported from C:\Users\ASUS\Desktop\jobber\node_modules\@nx\js\src\executors\node\node-with-require-overrides.js[39m[22m
+[1m[31m    at finalizeResolution (node:internal/modules/esm/resolve:275:11)[39m[22m
+[1m[31m    at moduleResolve (node:internal/modules/esm/resolve:932:10)[39m[22m
+[1m[31m    at defaultResolve (node:internal/modules/esm/resolve:1056:11)[39m[22m
+[1m[31m    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:654:12)[39m[22m
+[1m[31m    at ModuleLoader.#cachedDefaultResolve (node:internal/modules/esm/loader:603:25)[39m[22m
+[1m[31m    at ModuleLoader.resolve (node:internal/modules/esm/loader:586:38)[39m[22m
+[1m[31m    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:242:38)[39m[22m
+[1m[31m    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:546:36)[39m[22m
+[1m[31m    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)[39m[22m
+[1m[31m    at ModuleLoader.import (node:internal/modules/esm/loader:545:21)[39m[22m
+[1m[31m[39m[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 683ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 8.57 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b9d7cdda21ce5564)
+
+
+
+[0m[7m[1m[32m NX [39m[22m[27m[0m  [32mSuccessfully ran target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on[39m
+
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+[1m[31mDebugger listening on ws://localhost:9229/5fab9b81-8695-43e9-90cc-75e9af05c2f5[39m[22m
+[1m[31m[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[2mEnvironment variables loaded from ..\..\.env[22m
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 1.24s
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 1.29s
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 532ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 744ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 8.59 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ca892749cd723de8)
+
+
+
+[0m[7m[1m[32m NX [39m[22m[27m[0m  [32mSuccessfully ran target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on[39m
+
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+[2mEnvironment variables loaded from ..\..\.env[22m
+[2mPrisma schema loaded from prisma\schema.prisma[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mFile change detected. Restarting...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 8.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (9f756fcd14a9eb06)
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 1.66s
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+
+✔ Generated [1mPrisma Client[22m (v6.15.0)[2m to .\..\..\node_modules\@prisma-clients\jobber-auth[22m in 866ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+
+
+
+[0m[7m[1m[32m NX [39m[22m[27m[0m  [32mSuccessfully ran target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on[39m
+
+
+[2m> [22mwebpack-cli build --node-env=development
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[0m[7m[1m[36m NX [39m[22m[27m[0m  [36mRunning target [1mbuild[22m for project jobber-auth and [1m1[22m task it depends on:[39m
+
+
+
+[2m> [22m[2mnx run[22m jobber-auth:build:development
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mwebpack-cli build --node-env=development
+
+[2m> [22mprisma generate
+
+
+[2m> [22m[2mnx run[22m jobber-auth:generate-types
+
+[2m> [22mprisma generate
+
+C:\Users\ASUS\Desktop\jobber\node_modules\@nx\js\src\executors\node\node.impl.js:337
+    throw new Error(`Could not find ${fileToRun}. Make sure your build succeeded.`);
+          ^
+
+Error: Could not find C:\Users\ASUS\Desktop\jobber\dist\apps\jobber-auth\main.js. Make sure your build succeeded.
+    at fileToRunCorrectPath [90m(C:\Users\ASUS\Desktop\jobber\[39mnode_modules\[4m@nx[24m\js\src\executors\node\node.impl.js:337:11[90m)[39m
+    at [90mC:\Users\ASUS\Desktop\jobber\[39mnode_modules\[4m@nx[24m\js\src\executors\node\node.impl.js:116:49
+    at new Promise (<anonymous>)
+    at Object.start [90m(C:\Users\ASUS\Desktop\jobber\[39mnode_modules\[4m@nx[24m\js\src\executors\node\node.impl.js:110:36[90m)[39m
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async processQueue [90m(C:\Users\ASUS\Desktop\jobber\[39mnode_modules\[4m@nx[24m\js\src\executors\node\node.impl.js:81:13[90m)[39m
+
+Node.js v22.12.0
