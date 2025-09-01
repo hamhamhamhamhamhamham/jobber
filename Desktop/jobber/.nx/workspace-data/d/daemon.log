@@ -13451,3 +13451,379 @@ DEBUG nx::native::tasks::task_hasher: plan length: 2
 [NX v21.3.11 Daemon Server] - 2025-08-31T09:05:49.648Z - Closed a connection. Number of open connections: 0
 [NX v21.3.11 Daemon Server] - 2025-08-31T09:05:49.649Z - [WATCHER]: Stopping the watcher for c:\Users\ASUS\Desktop\jobber (outputs)
 [NX v21.3.11 Daemon Server] - 2025-08-31T09:05:49.863Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.850Z - Started listening on: \\.\pipe\nx\C:\Users\ASUS\AppData\Local\Temp\f594fa98251f7bf8dec9\d.sock
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.881Z - [WATCHER]: Subscribed to changes within: c:\Users\ASUS\Desktop\jobber (native)
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.887Z - Established a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.893Z - Closed a connection. Number of open connections: 0
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.912Z - Established a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.913Z - Closed a connection. Number of open connections: 0
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.914Z - Established a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:47.921Z - [REQUEST]: Client Request for Project Graph Received
+Time for 'plugin worker 9296 code loading' 15.158999999999999
+Time for 'plugin worker 12844 code loading' 16.0443
+Time for 'plugin worker 6080 code loading' 22.336600000000004
+Time for 'plugin worker 20392 code loading' 15.787700000000001
+Time for 'plugin worker 3412 code loading' 16.206400000000002
+Time for 'plugin worker 9908 code loading' 17.401199999999996
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:48.643Z - Time taken for 'Load Nx Plugin: c:\Users\ASUS\Desktop\jobber\node_modules\nx\src\plugins\package-json' 704.8464ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:48.659Z - Time taken for 'Load Nx Plugin: c:\Users\ASUS\Desktop\jobber\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 720.5503ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:48.720Z - Time taken for 'loadDefaultNxPlugins' 784.2407ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.232Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 1299.2273ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.234Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 1303.7151000000001ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.553Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.553Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.553Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.558Z - No files changed, but no in-memory cached project graph found. Recomputing it...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.572Z - Time taken for 'loadSpecifiedNxPlugins' 1626.1495ms
+Time for 'nx/core/project-json:createNodes' 1.375099999999975
+Time for 'nx/core/package-json:createNodes' 2.1950000000001637
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.583Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.583Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.584Z - Closed a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.584Z - Closed a connection. Number of open connections: 1
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.586Z - Established a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.586Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.587Z - Closed a connection. Number of open connections: 2
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.587Z - Established a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.587Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.590Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 6.996000000000095
+Time for 'deserialize daemon response' 0.05480000000011387
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.595Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.598Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.599Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.599Z - Handled GLOB. Handling time: 1. Response time: 9.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 26.552000000000135
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.604Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.604Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.604Z - Handled HASH_GLOB. Handling time: 3. Response time: 9.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.604Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.605Z - Handled HASH_GLOB. Handling time: 1. Response time: 7.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.608Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:49.608Z - Handled HASH_GLOB. Handling time: 2. Response time: 4.
+Time for 'total for sendMessageToDaemon()' 13.116800000000012
+Time for 'deserialize daemon response' 0.02659999999991669
+Time for '@nx/jest/plugin:createNodes' 2591.5438999999997
+Time for 'total for sendMessageToDaemon()' 13.064599999999928
+Time for 'deserialize daemon response' 0.056199999999989814
+(node:6080) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Time for '@nx/webpack/plugin:createNodes' 2816.053
+Time for 'total for sendMessageToDaemon()' 11.100500000000011
+Time for 'deserialize daemon response' 0.05989999999997053
+Time for '@nx/eslint/plugin:createNodes' 5903.0169000000005
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.537Z - Time taken for 'build-project-configs' 5931.549000000001ms
+Time for 'build typescript dependencies' 46.899099999999635
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.707Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.707Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.709Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.710Z - Time taken for 'total for creating and serializing project graph' 7787.6323ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.712Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.712Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 7788. Response time: 3.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.717Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.718Z - Done responding to the client handleContextFileData
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.718Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:10:55.719Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.274Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.285Z - [WATCHER]: 0 file(s) created or restored, 1 file(s) modified, 1 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.399Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.399Z - [REQUEST]: .github/ci.yml
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.399Z - [REQUEST]: .github/workflows/ci.yml
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.422Z - Time taken for 'hash changed files from watcher' 1.2933000000193715ms
+Time for 'nx/core/package-json:createNodes' 1.5786000001244247
+Time for 'nx/core/project-json:createNodes' 2.297400000039488
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.428Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.432Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 8.691900000208989
+Time for 'deserialize daemon response' 0.0625
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.437Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.438Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.438Z - Handled HASH_GLOB. Handling time: 1. Response time: 10.
+Time for '@nx/webpack/plugin:createNodes' 32.74339999980293
+Time for 'total for sendMessageToDaemon()' 6.7304000000003725
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.439Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.439Z - Handled GLOB. Handling time: 1. Response time: 7.
+Time for 'deserialize daemon response' 0.05779999983496964
+Time for '@nx/jest/plugin:createNodes' 26.13370000012219
+Time for 'total for sendMessageToDaemon()' 12.156699999934062
+Time for 'deserialize daemon response' 0.04099999996833503
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 18.29909999994561
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.444Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.445Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.445Z - Handled HASH_GLOB. Handling time: 1. Response time: 8.
+Time for 'total for sendMessageToDaemon()' 11.913900000043213
+Time for 'deserialize daemon response' 0.04810000001452863
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.455Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.456Z - Handled HASH_GLOB. Handling time: 3. Response time: 12.
+Time for '@nx/eslint/plugin:createNodes' 128.6995000001043
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.558Z - Time taken for 'build-project-configs' 140.73809999995865ms
+Time for 'build typescript dependencies' 0.2209000000730157
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.597Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.597Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.598Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.598Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:35.598Z - Time taken for 'total execution time for createProjectGraph()' 33.43719999981113ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:37.856Z - [WATCHER]: 0 file(s) created or restored, 1 file(s) modified, 1 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:37.856Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.062Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.063Z - [REQUEST]: .github/workflows/ci.yml
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.063Z - [REQUEST]: .github/ci.yml
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.072Z - Time taken for 'hash changed files from watcher' 0.6544999999459833ms
+Time for 'nx/core/package-json:createNodes' 0.9768999998923391
+Time for 'nx/core/project-json:createNodes' 1.0331000001169741
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.078Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 5.625799999805167
+Time for 'deserialize daemon response' 0.04729999997653067
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.082Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.083Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.083Z - Handled GLOB. Handling time: 2. Response time: 5.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.086Z - [REQUEST]: Responding to the client. handleHashGlob
+Time for '@nx/jest/plugin:createNodes' 15.453600000124425
+Time for 'total for sendMessageToDaemon()' 5.828300000168383
+Time for 'deserialize daemon response' 0.025800000177696347
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.091Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.091Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.091Z - Handled HASH_GLOB. Handling time: 0. Response time: 9.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.092Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.092Z - Handled HASH_GLOB. Handling time: 1. Response time: 6.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 14.378700000001118
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.095Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.095Z - Handled HASH_GLOB. Handling time: 2. Response time: 4.
+Time for '@nx/webpack/plugin:createNodes' 29.54660000000149
+Time for 'total for sendMessageToDaemon()' 7.68570000003092
+Time for 'deserialize daemon response' 0.023999999975785613
+Time for '@nx/eslint/plugin:createNodes' 28.349600000074133
+Time for 'total for sendMessageToDaemon()' 11.705499999923632
+Time for 'deserialize daemon response' 0.07229999988339841
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.117Z - Time taken for 'build-project-configs' 40.28940000012517ms
+Time for 'build typescript dependencies' 0.05830000014975667
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.174Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.174Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.175Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.175Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:38.175Z - Time taken for 'total execution time for createProjectGraph()' 45.26080000004731ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.883Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.883Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.884Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.884Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.886Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.888Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.889Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.889Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.890Z - Time taken for 'total for creating and serializing project graph' 0.843800000147894ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.892Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.892Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.899Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.900Z - Done responding to the client handleContextFileData
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.900Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:32:48.901Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.035Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.036Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.141Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.142Z - [REQUEST]: main,git
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.142Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.149Z - Time taken for 'hash changed files from watcher' 0.43650000006891787ms
+Time for 'nx/core/package-json:createNodes' 2.615100000053644
+Time for 'nx/core/project-json:createNodes' 2.4654999999329448
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.157Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 2.872200000099838
+Time for 'deserialize daemon response' 0.05600000009872019
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.160Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.160Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.160Z - Handled GLOB. Handling time: 1. Response time: 3.
+Time for '@nx/jest/plugin:createNodes' 15.125899999868125
+Time for 'total for sendMessageToDaemon()' 3.8879999998025596
+Time for 'deserialize daemon response' 0.02630000002682209
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.164Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.166Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.167Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.167Z - Handled HASH_GLOB. Handling time: 1. Response time: 7.
+Time for 'total for sendMessageToDaemon()' 6.730200000107288
+Time for 'deserialize daemon response' 0.025000000139698386
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.167Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.168Z - Handled HASH_GLOB. Handling time: 2. Response time: 4.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.168Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.168Z - Handled HASH_GLOB. Handling time: 0. Response time: 2.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 16.91259999992326
+Time for '@nx/webpack/plugin:createNodes' 28.202100000111386
+Time for 'total for sendMessageToDaemon()' 8.267499999841675
+Time for 'deserialize daemon response' 0.031599999871104956
+Time for '@nx/eslint/plugin:createNodes' 83.93849999993108
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.236Z - Time taken for 'build-project-configs' 88.02390000014566ms
+Time for 'build typescript dependencies' 0.050100000109523535
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.280Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.280Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.281Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.281Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:23.281Z - Time taken for 'total execution time for createProjectGraph()' 27.274800000013784ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.052Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.053Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.053Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.053Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.054Z - Established a connection. Number of open connections: 4
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.056Z - [REQUEST]: Client Request for Project Graph Received
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.056Z - Reusing in-memory cached project graph because no files changed.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.056Z - [REQUEST]: Responding to the client. project-graph
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.058Z - Time taken for 'total for creating and serializing project graph' 0.8626000001095235ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.059Z - Done responding to the client project-graph
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.059Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.065Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.066Z - Done responding to the client handleContextFileData
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.066Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:34.066Z - Closed a connection. Number of open connections: 3
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.131Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.137Z - [WATCHER]: dummy.txt was modified
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.248Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.248Z - [REQUEST]: dummy.txt
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.248Z - [REQUEST]: 
+Time for 'nx/core/package-json:createNodes' 0.8540000000502914
+Time for 'nx/core/project-json:createNodes' 1.0601000001188368
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.263Z - [REQUEST]: Responding to the client. handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.264Z - Time taken for 'hash changed files from watcher' 0.19750000000931323ms
+Time for 'total for sendMessageToDaemon()' 4.680500000016764
+Time for 'deserialize daemon response' 0.04789999988861382
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.268Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.268Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.268Z - Handled GLOB. Handling time: 1. Response time: 5.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.272Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+Time for '@nx/jest/plugin:createNodes' 14.376299999887124
+Time for 'total for sendMessageToDaemon()' 6.798999999882653
+Time for 'deserialize daemon response' 0.027199999894946814
+Time for 'total for sendMessageToDaemon()' 8.326700000092387
+Time for 'deserialize daemon response' 0.027599999913945794
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.275Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.275Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.275Z - Handled HASH_GLOB. Handling time: 1. Response time: 7.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.276Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.276Z - Handled HASH_GLOB. Handling time: 2. Response time: 4.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.276Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.276Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 14.097300000023097
+Time for '@nx/webpack/plugin:createNodes' 29.41110000014305
+Time for 'total for sendMessageToDaemon()' 11.15320000005886
+Time for 'deserialize daemon response' 0.03260000003501773
+Time for '@nx/eslint/plugin:createNodes' 97.77190000005066
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.362Z - Time taken for 'build-project-configs' 103.91990000009537ms
+Time for 'build typescript dependencies' 0.03860000008717179
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.410Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.410Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.411Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.411Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:39.411Z - Time taken for 'total execution time for createProjectGraph()' 34.11660000006668ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.753Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.755Z - [WATCHER]: dummy.txt was modified
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.970Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.970Z - [REQUEST]: dummy.txt
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.970Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.978Z - Time taken for 'hash changed files from watcher' 0.4666999999899417ms
+Time for 'nx/core/package-json:createNodes' 0.989399999845773
+Time for 'nx/core/project-json:createNodes' 1.1447999998927116
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.981Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 3.5874999999068677
+Time for 'deserialize daemon response' 0.027800000039860606
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.984Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.984Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.984Z - Handled GLOB. Handling time: 1. Response time: 3.
+Time for '@nx/jest/plugin:createNodes' 13.475499999942258
+Time for 'total for sendMessageToDaemon()' 4.21100000012666
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.990Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+Time for 'deserialize daemon response' 0.02590000000782311
+Time for 'total for sendMessageToDaemon()' 8.720900000073016
+Time for 'deserialize daemon response' 0.02800000016577542
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.992Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.992Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.993Z - Handled HASH_GLOB. Handling time: 1. Response time: 9.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.993Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.994Z - Handled HASH_GLOB. Handling time: 4. Response time: 4.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.994Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:49.994Z - Handled HASH_GLOB. Handling time: 0. Response time: 2.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 13.897000000113621
+Time for '@nx/webpack/plugin:createNodes' 24.938000000081956
+Time for 'total for sendMessageToDaemon()' 9.36670000012964
+Time for 'deserialize daemon response' 0.026199999963864684
+Time for '@nx/eslint/plugin:createNodes' 97.12960000010207
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:50.081Z - Time taken for 'build-project-configs' 100.45079999999143ms
+Time for 'build typescript dependencies' 0.053899999940767884
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:50.129Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:50.129Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:50.130Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:50.130Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:35:50.130Z - Time taken for 'total execution time for createProjectGraph()' 34.60439999983646ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:47.759Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:47.762Z - [WATCHER]: .github/workflows/ci.yml was modified
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.181Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.181Z - [REQUEST]: .github/workflows/ci.yml
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.181Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.190Z - Time taken for 'hash changed files from watcher' 0.3435000004246831ms
+Time for 'nx/core/package-json:createNodes' 1.1839999998919666
+Time for 'nx/core/project-json:createNodes' 0.9085999997332692
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.196Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 4.070899999700487
+Time for 'deserialize daemon response' 0.030599999707192183
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.199Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.201Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.201Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.201Z - Handled GLOB. Handling time: 1. Response time: 5.
+Time for '@nx/jest/plugin:createNodes' 12.996299999766052
+Time for 'total for sendMessageToDaemon()' 5.079899999778718
+Time for 'deserialize daemon response' 0.0430999998934567
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.204Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.204Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.204Z - Handled HASH_GLOB. Handling time: 1. Response time: 5.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.204Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.204Z - Handled HASH_GLOB. Handling time: 1. Response time: 3.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.205Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.205Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 13.768999999854714
+Time for 'total for sendMessageToDaemon()' 7.436900000087917
+Time for 'deserialize daemon response' 0.042300000321120024
+Time for '@nx/webpack/plugin:createNodes' 21.825000000186265
+Time for 'total for sendMessageToDaemon()' 4.9605000000447035
+Time for 'deserialize daemon response' 0.026099999900907278
+Time for '@nx/eslint/plugin:createNodes' 78.27389999991283
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.273Z - Time taken for 'build-project-configs' 84.47580000013113ms
+Time for 'build typescript dependencies' 0.02700000023469329
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.309Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.309Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.310Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.311Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:48.311Z - Time taken for 'total execution time for createProjectGraph()' 25.36489999992773ms
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:53.897Z - [WATCHER]: Processing file changes in outputs
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:53.902Z - [WATCHER]: .github/workflows/ci.yml was modified
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.706Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.706Z - [REQUEST]: .github/workflows/ci.yml
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.706Z - [REQUEST]: 
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.716Z - Time taken for 'hash changed files from watcher' 0.18720000004395843ms
+Time for 'nx/core/package-json:createNodes' 1.1488000000827014
+Time for 'nx/core/project-json:createNodes' 0.9777000001631677
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.721Z - [REQUEST]: Responding to the client. handleGlob
+Time for 'total for sendMessageToDaemon()' 4.1260999999940395
+Time for 'deserialize daemon response' 0.024699999950826168
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.724Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.730Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.730Z - Done responding to the client handleGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.730Z - Handled GLOB. Handling time: 1. Response time: 9.
+Time for '@nx/jest/plugin:createNodes' 14.9043000000529
+Time for 'total for sendMessageToDaemon()' 4.816699999850243
+Time for 'deserialize daemon response' 0.04630000004544854
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.733Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 13.875500000081956
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.734Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.734Z - Handled HASH_GLOB. Handling time: 0. Response time: 10.
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.734Z - Done responding to the client handleHashGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.734Z - Handled HASH_GLOB. Handling time: 1. Response time: 4.
+Time for 'total for sendMessageToDaemon()' 12.068700000178069
+Time for 'deserialize daemon response' 0.04029999999329448
+Time for '@nx/webpack/plugin:createNodes' 25.35440000006929
+Time for 'total for sendMessageToDaemon()' 10.302800000179559
+Time for 'deserialize daemon response' 0.0284000001847744
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.741Z - Done responding to the client handleHashMultiGlob
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.742Z - Handled HASH_GLOB. Handling time: 1. Response time: 9.
+Time for '@nx/eslint/plugin:createNodes' 80.16720000002533
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.801Z - Time taken for 'build-project-configs' 86.40709999995306ms
+Time for 'build typescript dependencies' 0.05129999993368983
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.847Z - Wrote project graph cache to c:\Users\ASUS\Desktop\jobber\.nx\workspace-data\project-graph.json
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.847Z - [SYNC]: collect registered sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.848Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.848Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v21.3.11 Daemon Server] - 2025-09-01T06:52:54.848Z - Time taken for 'total execution time for createProjectGraph()' 33.01539999991655ms
