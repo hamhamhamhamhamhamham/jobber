@@ -1,0 +1,21 @@
+// **NOTE** : clients not client
+// **NOTE** > + special value for microservices to avoid overriding each other
+
+// **PRISMA TYPESCRIPT**
+generator client {
+    provider = "prisma-client-js"
+    output   = "../../../node_modules/@prisma-clients/jobber-auth"
+}
+
+// REQUEST to service(posttgres container) running in docker
+datasource db {
+    provider = "postgresql"
+    url      = env("AUTH_DATABASE_URL")
+}
+
+// Table schema 
+model User {
+    id       Int    @id @default(autoincrement())
+    email    String @unique
+    password String
+}

@@ -375,6 +375,46 @@
     "targets.test.options.passWithNoTests": [
       "apps/jobber-auth/project.json",
       "nx/core/project-json"
+    ],
+    "targets.generate-types": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.generate-types.options": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.generate-types.executor": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.generate-types.options.cwd": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.generate-types.options.command": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-prisma": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-prisma.options": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-prisma.executor": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-prisma.options.cwd": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-prisma.options.command": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
     ]
   },
   "apps/jobber-auth-e2e": {
@@ -492,6 +532,164 @@
     ],
     "targets.e2e.options.passWithNoTests": [
       "apps/jobber-auth-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/nestjs": {
+    "root": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "libs/nestjs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/nestjs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/nestjs/project.json",
       "nx/core/project-json"
     ]
   }

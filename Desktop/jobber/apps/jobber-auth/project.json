@@ -6,6 +6,7 @@
   "tags": [],
   "targets": {
     "build": {
+      "dependsOn": ["generate-types"],
       "executor": "nx:run-commands",
       "options": {
         "command": "webpack-cli build",
@@ -24,7 +25,7 @@
       "dependsOn": ["build"],
       "options": {
         "buildTarget": "jobber-auth:build",
-        "runBuildTargetDependencies": false
+        "runBuildTargetDependencies": true     
       },
       "configurations": {
         "development": {
@@ -36,8 +37,21 @@
       }
     },
     "test": {
+      "dependsOn": ["generate-types"],
       "options": {
         "passWithNoTests": true
+      }
+    },
+    "generate-types":{
+      "command":"prisma generate",
+      "options":{
+        "cwd":"apps/jobber-auth"
+      }
+    },
+    "migrate-prisma":{
+      "command":"prisma migrate dev --name createTable",
+      "options":{
+        "cwd":"apps/jobber-auth"
       }
     }
   }
