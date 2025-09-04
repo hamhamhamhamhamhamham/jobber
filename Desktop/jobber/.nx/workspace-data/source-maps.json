@@ -25,8 +25,8 @@
       "@nx/webpack/plugin"
     ],
     "targets.build.dependsOn": [
-      "apps/jobber-auth/webpack.config.js",
-      "@nx/webpack/plugin"
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
     ],
     "targets.build.inputs": [
       "apps/jobber-auth/webpack.config.js",
@@ -369,6 +369,10 @@
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production.buildTarget": [
+      "apps/jobber-auth/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.dependsOn": [
       "apps/jobber-auth/project.json",
       "nx/core/project-json"
     ],

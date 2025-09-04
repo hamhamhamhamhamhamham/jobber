@@ -34,6 +34,10 @@
     "projectFileMap": {
       "jobber-auth": [
         {
+          "file": "apps/jobber-auth/.env",
+          "hash": "15629033497896086487"
+        },
+        {
           "file": "apps/jobber-auth/eslint.config.mjs",
           "hash": "2624537849564014525"
         },
@@ -51,20 +55,102 @@
         },
         {
           "file": "apps/jobber-auth/prisma/schema.prisma",
-          "hash": "12240038039826313399"
+          "hash": "2757717811691870452"
         },
         {
           "file": "apps/jobber-auth/project.json",
-          "hash": "15560569396927326421"
+          "hash": "8313393297366448334"
         },
         {
           "file": "apps/jobber-auth/src/app/app.module.ts",
-          "hash": "11369396219111067647",
+          "hash": "1435105322617656749",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/graphql",
             "npm:@nestjs/apollo",
             "npm:@nestjs/config"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/auth.module.ts",
+          "hash": "5681621598684411116",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/config"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/auth.resolver.spec.ts",
+          "hash": "2239786431023692787",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/auth.resolver.ts",
+          "hash": "10942234091675091099",
+          "deps": [
+            "npm:@nestjs/graphql",
+            "nestjs"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/auth.service.spec.ts",
+          "hash": "6549040118303290692",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/config",
+            "npm:@nestjs/jwt"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/auth.service.ts",
+          "hash": "7770308136401691973",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:express",
+            "npm:bcryptjs",
+            "npm:@nestjs/config",
+            "npm:@nestjs/jwt",
+            "nestjs"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/decorators/current-user.decorator.ts",
+          "hash": "5849309627355671568",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/graphql"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/dtos/login.dto.ts",
+          "hash": "7660290599588890162",
+          "deps": [
+            "npm:@nestjs/graphql",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/guards/gql-auth.guard.ts",
+          "hash": "4444988954929268222",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/graphql",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "apps/jobber-auth/src/app/auth/strategies/jwt.strategy.ts",
+          "hash": "15399076355103398411",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/passport",
+            "npm:passport-jwt",
+            "npm:express",
+            "nestjs"
           ]
         },
         {
@@ -106,35 +192,37 @@
         },
         {
           "file": "apps/jobber-auth/src/app/users/users.module.ts",
-          "hash": "6838708472443329589",
+          "hash": "4134147890316853099",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
           "file": "apps/jobber-auth/src/app/users/users.resolver.spec.ts",
-          "hash": "5466122819356015499",
+          "hash": "11864148127566589845",
           "deps": [
             "npm:@nestjs/testing"
           ]
         },
         {
           "file": "apps/jobber-auth/src/app/users/users.resolver.ts",
-          "hash": "17863375061510707295",
+          "hash": "5842332384115849527",
           "deps": [
-            "npm:@nestjs/graphql"
+            "npm:@nestjs/graphql",
+            "npm:@nestjs/common",
+            "nestjs"
           ]
         },
         {
           "file": "apps/jobber-auth/src/app/users/users.service.spec.ts",
-          "hash": "7278099433523887940",
+          "hash": "13003900943973386224",
           "deps": [
             "npm:@nestjs/testing"
           ]
         },
         {
           "file": "apps/jobber-auth/src/app/users/users.service.ts",
-          "hash": "8150298472131040857",
+          "hash": "8753256416137161490",
           "deps": [
             "npm:@nestjs/common",
             "npm:bcryptjs"
@@ -146,11 +234,12 @@
         },
         {
           "file": "apps/jobber-auth/src/main.ts",
-          "hash": "15311790940647356028",
+          "hash": "7493983896820136037",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/core",
-            "npm:@nestjs/config"
+            "npm:@nestjs/config",
+            "npm:cookie-parser"
           ]
         },
         {
@@ -171,6 +260,62 @@
           "deps": [
             "npm:@nx/webpack"
           ]
+        }
+      ],
+      "nestjs": [
+        {
+          "file": "libs/nestjs/README.md",
+          "hash": "2262471044805060846"
+        },
+        {
+          "file": "libs/nestjs/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "libs/nestjs/jest.config.ts",
+          "hash": "6783217902793626073"
+        },
+        {
+          "file": "libs/nestjs/project.json",
+          "hash": "12590315033255750300"
+        },
+        {
+          "file": "libs/nestjs/src/index.ts",
+          "hash": "12245069596470217933"
+        },
+        {
+          "file": "libs/nestjs/src/lib/graphql/abstract.model.ts",
+          "hash": "3586584430351197539",
+          "deps": [
+            "npm:@nestjs/graphql"
+          ]
+        },
+        {
+          "file": "libs/nestjs/src/lib/graphql/gql-context.interface.ts",
+          "hash": "3183008850529430019",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "libs/nestjs/src/lib/graphql/index.ts",
+          "hash": "13810226972285309200"
+        },
+        {
+          "file": "libs/nestjs/src/lib/graphql/token-payload.interface.ts",
+          "hash": "10105015751390334800"
+        },
+        {
+          "file": "libs/nestjs/tsconfig.json",
+          "hash": "13388042237561572124"
+        },
+        {
+          "file": "libs/nestjs/tsconfig.lib.json",
+          "hash": "8850325603424670976"
+        },
+        {
+          "file": "libs/nestjs/tsconfig.spec.json",
+          "hash": "6622138706846345436"
         }
       ],
       "jobber-auth-e2e": [
@@ -222,51 +367,6 @@
           "file": "apps/jobber-auth-e2e/tsconfig.spec.json",
           "hash": "14954872453723519891"
         }
-      ],
-      "nestjs": [
-        {
-          "file": "libs/nestjs/README.md",
-          "hash": "2262471044805060846"
-        },
-        {
-          "file": "libs/nestjs/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "libs/nestjs/jest.config.ts",
-          "hash": "6783217902793626073"
-        },
-        {
-          "file": "libs/nestjs/project.json",
-          "hash": "12590315033255750300"
-        },
-        {
-          "file": "libs/nestjs/src/index.ts",
-          "hash": "12245069596470217933"
-        },
-        {
-          "file": "libs/nestjs/src/lib/graphql/abstract.model.ts",
-          "hash": "3586584430351197539",
-          "deps": [
-            "npm:@nestjs/graphql"
-          ]
-        },
-        {
-          "file": "libs/nestjs/src/lib/graphql/index.ts",
-          "hash": "18279275577372973215"
-        },
-        {
-          "file": "libs/nestjs/tsconfig.json",
-          "hash": "13388042237561572124"
-        },
-        {
-          "file": "libs/nestjs/tsconfig.lib.json",
-          "hash": "8850325603424670976"
-        },
-        {
-          "file": "libs/nestjs/tsconfig.spec.json",
-          "hash": "6622138706846345436"
-        }
       ]
     },
     "nonProjectFiles": [
@@ -276,7 +376,7 @@
       },
       {
         "file": ".env",
-        "hash": "1225481046010371604"
+        "hash": "13786709271225175360"
       },
       {
         "file": ".github/workflows/ci.yml",
@@ -324,11 +424,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "14797306303180865974"
+        "hash": "16547548400726722037"
       },
       {
         "file": "package.json",
-        "hash": "7889469122146512726"
+        "hash": "3274967329076565545"
       },
       {
         "file": "tsconfig.base.json",

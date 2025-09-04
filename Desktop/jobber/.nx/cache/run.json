@@ -1,18 +1,29 @@
 {
   "run": {
     "command": "nx run jobber-auth:build:development",
-    "startTime": "2025-09-01T17:55:56.793Z",
-    "endTime": "2025-09-01T17:56:06.700Z",
+    "startTime": "2025-09-04T18:42:06.850Z",
+    "endTime": "2025-09-04T18:42:23.857Z",
     "inner": false
   },
   "tasks": [
     {
+      "taskId": "jobber-auth:generate-types",
+      "target": "generate-types",
+      "projectName": "jobber-auth",
+      "hash": "11911356459687356241",
+      "startTime": "2025-09-04T18:42:06.910Z",
+      "endTime": "2025-09-04T18:42:11.790Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
       "taskId": "jobber-auth:build:development",
       "target": "build",
       "projectName": "jobber-auth",
-      "hash": "3972503021100237080",
-      "startTime": "2025-09-01T17:55:56.828Z",
-      "endTime": "2025-09-01T17:56:06.364Z",
+      "hash": "13967737252450016679",
+      "startTime": "2025-09-04T18:42:11.796Z",
+      "endTime": "2025-09-04T18:42:23.837Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
