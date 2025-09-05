@@ -18,7 +18,7 @@ import { AuthModule } from './auth/auth.module';
           'request.credentials': 'include'
         } 
       },
-      context:({req,res}) => ({req,res}), // context.req > available
+      context:({req,res}) => ({req,res}),  // enable context.req 
       autoSchemaFile: true, // auto conversion(graphql decorators to graphql schema by apolloserver)
     }),
     PrismaModule, 

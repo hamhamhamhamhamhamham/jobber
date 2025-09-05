@@ -71,6 +71,77 @@
         "tags": []
       }
     },
+    "jobber-jobs-e2e": {
+      "name": "jobber-jobs-e2e",
+      "type": "e2e",
+      "data": {
+        "root": "apps/jobber-jobs-e2e",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/jobber-jobs-e2e",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/apps/jobber-jobs-e2e/eslint.config.mjs",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "npx eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "e2e": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{e2eProjectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/jobber-jobs-e2e/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "dependsOn": [
+              "jobber-jobs:build",
+              "jobber-jobs:serve"
+            ],
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "name": "jobber-jobs-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "implicitDependencies": [
+          "jobber-jobs"
+        ],
+        "tags": []
+      }
+    },
     "jobber-auth": {
       "name": "jobber-auth",
       "type": "app",
@@ -320,6 +391,238 @@
         "name": "jobber-auth",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/jobber-auth/src",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "jobber-jobs": {
+      "name": "jobber-jobs",
+      "type": "app",
+      "data": {
+        "root": "apps/jobber-jobs",
+        "projectType": "application",
+        "metadata": {},
+        "targets": {
+          "build": {
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production",
+              {
+                "externalDependencies": [
+                  "webpack-cli"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}/dist\\apps\\jobber-jobs"
+            ],
+            "metadata": {
+              "technologies": [
+                "webpack"
+              ],
+              "description": "Runs Webpack build",
+              "help": {
+                "command": "npx webpack-cli build --help",
+                "example": {
+                  "options": {
+                    "json": "stats.json"
+                  },
+                  "args": [
+                    "--profile"
+                  ]
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "apps/jobber-jobs",
+              "args": [
+                "--node-env=production"
+              ],
+              "command": "webpack-cli build"
+            },
+            "configurations": {
+              "development": {
+                "args": [
+                  "--node-env=development"
+                ]
+              }
+            },
+            "parallelism": true
+          },
+          "serve": {
+            "continuous": true,
+            "executor": "@nx/js:node",
+            "defaultConfiguration": "development",
+            "dependsOn": [
+              "build"
+            ],
+            "options": {
+              "buildTarget": "jobber-jobs:build",
+              "runBuildTargetDependencies": false
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "jobber-jobs:build:development"
+              },
+              "production": {
+                "buildTarget": "jobber-jobs:build:production"
+              }
+            },
+            "parallelism": true
+          },
+          "preview": {
+            "continuous": true,
+            "options": {
+              "cwd": "apps/jobber-jobs",
+              "args": [
+                "--node-env=production"
+              ],
+              "command": "webpack-cli serve"
+            },
+            "metadata": {
+              "technologies": [
+                "webpack"
+              ],
+              "description": "Starts Webpack dev server in production mode",
+              "help": {
+                "command": "npx webpack-cli serve --help",
+                "example": {
+                  "options": {
+                    "args": [
+                      "--client-progress",
+                      "--history-api-fallback "
+                    ]
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve-static": {
+            "continuous": true,
+            "dependsOn": [
+              "build"
+            ],
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "build",
+              "spa": true
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build-deps": {
+            "dependsOn": [
+              "^build"
+            ],
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "executor": "nx:noop"
+          },
+          "watch-deps": {
+            "continuous": true,
+            "dependsOn": [
+              "build-deps"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "command": "npx nx watch --projects jobber-jobs --includeDependentProjects -- npx nx build-deps jobber-jobs"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/jobber-jobs",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/apps/jobber-jobs/eslint.config.mjs",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "npx eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "test": {
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests",
+              "help": {
+                "command": "npx jest --help",
+                "example": {
+                  "options": {
+                    "coverage": true
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}\\jest.preset.js",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\apps\\jobber-jobs"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "apps/jobber-jobs",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+              },
+              "command": "jest",
+              "passWithNoTests": true
+            },
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "name": "jobber-jobs",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/jobber-jobs/src",
         "tags": [],
         "implicitDependencies": []
       }
@@ -2416,6 +2719,15 @@
         "version": "0.3.5",
         "packageName": "@eslint/plugin-kit",
         "hash": "sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w=="
+      }
+    },
+    "npm:@golevelup/nestjs-discovery": {
+      "type": "npm",
+      "name": "npm:@golevelup/nestjs-discovery",
+      "data": {
+        "version": "5.0.0",
+        "packageName": "@golevelup/nestjs-discovery",
+        "hash": "sha512-NaIWLCLI+XvneUK05LH2idHLmLNITYT88YnpOuUQmllKtiJNIS3woSt7QXrMZ5k3qUWuZpehEVz1JtlX4I1KyA=="
       }
     },
     "npm:@graphql-tools/merge": {
@@ -11932,6 +12244,23 @@
         "type": "static"
       }
     ],
+    "jobber-jobs-e2e": [
+      {
+        "source": "jobber-jobs-e2e",
+        "target": "jobber-jobs",
+        "type": "implicit"
+      },
+      {
+        "source": "jobber-jobs-e2e",
+        "target": "npm:axios",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs-e2e",
+        "target": "npm:@nx/node",
+        "type": "static"
+      }
+    ],
     "jobber-auth": [
       {
         "source": "jobber-auth",
@@ -12005,6 +12334,58 @@
       },
       {
         "source": "jobber-auth",
+        "target": "npm:@nx/webpack",
+        "type": "static"
+      }
+    ],
+    "jobber-jobs": [
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@nestjs/common",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@nestjs/config",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@nestjs/graphql",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@nestjs/apollo",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:class-validator",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@nestjs/testing",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@golevelup/nestjs-discovery",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:@nestjs/core",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
+        "target": "npm:cookie-parser",
+        "type": "static"
+      },
+      {
+        "source": "jobber-jobs",
         "target": "npm:@nx/webpack",
         "type": "static"
       }
@@ -15154,6 +15535,23 @@
       {
         "source": "npm:@eslint/plugin-kit",
         "target": "npm:levn",
+        "type": "static"
+      }
+    ],
+    "npm:@golevelup/nestjs-discovery": [
+      {
+        "source": "npm:@golevelup/nestjs-discovery",
+        "target": "npm:@nestjs/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@golevelup/nestjs-discovery",
+        "target": "npm:@nestjs/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@golevelup/nestjs-discovery",
+        "target": "npm:lodash",
         "type": "static"
       }
     ],
@@ -27155,5 +27553,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1757011326591
+  "computedAt": 1757088282030
 }

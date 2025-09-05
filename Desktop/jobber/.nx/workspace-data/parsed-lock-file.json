@@ -1998,6 +1998,15 @@
         "hash": "sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w=="
       }
     },
+    "npm:@golevelup/nestjs-discovery": {
+      "type": "npm",
+      "name": "npm:@golevelup/nestjs-discovery",
+      "data": {
+        "version": "5.0.0",
+        "packageName": "@golevelup/nestjs-discovery",
+        "hash": "sha512-NaIWLCLI+XvneUK05LH2idHLmLNITYT88YnpOuUQmllKtiJNIS3woSt7QXrMZ5k3qUWuZpehEVz1JtlX4I1KyA=="
+      }
+    },
     "npm:@graphql-tools/merge": {
       "type": "npm",
       "name": "npm:@graphql-tools/merge",
@@ -14348,6 +14357,21 @@
     {
       "source": "npm:@eslint/plugin-kit",
       "target": "npm:levn",
+      "type": "static"
+    },
+    {
+      "source": "npm:@golevelup/nestjs-discovery",
+      "target": "npm:@nestjs/common",
+      "type": "static"
+    },
+    {
+      "source": "npm:@golevelup/nestjs-discovery",
+      "target": "npm:@nestjs/core",
+      "type": "static"
+    },
+    {
+      "source": "npm:@golevelup/nestjs-discovery",
+      "target": "npm:lodash",
       "type": "static"
     },
     {

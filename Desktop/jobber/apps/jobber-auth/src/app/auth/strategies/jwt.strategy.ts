@@ -10,7 +10,7 @@ import { TokenPayload } from "@jobber/nestjs";
 //👉 PARSE AND DECODE each request(cookie with jwt sticks to) > VERIFY cookie jwt with JWT_SECRET 
 //✔️ works along with cookie-parser(main.ts) 3rd party library to parse each request ;
 @Injectable() //✔️ enable adding dependencies to this class!
-export class JwtStrategy extends PassportStrategy(Strategy){ // calling constructor
+export class JwtStrategy extends PassportStrategy(Strategy){ // calling constructor & class as arg!
     
     constructor(configService:ConfigService){
         super({            // calling parent constructor again to > provide configs to underlying layers
@@ -22,6 +22,6 @@ export class JwtStrategy extends PassportStrategy(Strategy){ // calling construc
     }
     //👉 auto invoked to stick payload(userID) to traffic/request
     validate(payload:TokenPayload){
-        return payload  //✨return value is set to req.user(preset naem) >> req.user = {userID:3}
+        return payload  //✨return value is set to ctx.req.user(user is preset name) >> req.user = {userID:3}
     }
 }
