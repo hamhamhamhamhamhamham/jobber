@@ -19,7 +19,7 @@ export class UsersService {
      
       return await this.prismaService.user.findMany()
     }
-    // unique fields : id or email
+    // unique fields : argObj : {id} , {email}
     async findUserByUniques(argObj:Prisma.UserWhereUniqueInput){
      return await this.prismaService.user.findUniqueOrThrow({
       where:argObj           // where:{"hhhhh@gmail.com"} ! 

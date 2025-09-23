@@ -41,7 +41,9 @@ export class AuthService {
     response.cookie("AuthenticationToken",accessToken,{
         httpOnly:true, // ⁉️ client JS can not grab jwt!! , but your eyes can in browser inspection!!
         secure:this.configService.get("NODE_ENV")=="production", //cookie transmits through  HTTPS protocol > fully encrypted;
-        expires:expires //client cookie vanishes at same time with jwt!
+        expires:expires, //client cookie vanishes at same time with jwt!
+        // sameSite:true
+    
     })
 
     return user;  // 👉 mutation function expects User model as return value!

@@ -1,0 +1,23 @@
+syntax = "proto3";
+package auth; // each proto has it's unique package name
+              // a namespace for proto  
+              // ; matters
+
+
+//functions defination to expose to Other Services;
+// PRETTY STRAIGHT FORWARD!!! fn -> (in) returns (out)
+// AuthService > AuthServiceClient & AuthServiceController interdaces with authenticate method
+// 🔰SEND grpc Request > AuthServiceClient.authenticate({token}) method ;
+// 🔰recieve grpc Request > AuthController.authenticate() ;
+service AuthService {
+    rpc Authenticate(AuthenticateRequest) returns (User);
+}
+
+message AuthenticateRequest {
+ string token= 1;     // dummy values 
+}
+
+message User {
+    int32 id= 1;
+    string email= 2;
+}

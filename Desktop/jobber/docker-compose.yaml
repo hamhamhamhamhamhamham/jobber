@@ -6,6 +6,13 @@ services:
      - 5432:5432
     environment:
       POSTGRES_PASSWORD: mypassword
+
+  pulsar:
+    image: apachepulsar/pulsar
+    command: >
+     /pulsar/bin/pulsar standalone --wipe-data   
+    ports: 
+      - 6650:6650    
      
 
 

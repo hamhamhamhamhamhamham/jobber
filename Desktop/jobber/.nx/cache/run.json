@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run jobber-jobs:build:development",
-    "startTime": "2025-09-05T16:04:42.124Z",
-    "endTime": "2025-09-05T16:04:51.534Z",
+    "startTime": "2025-09-23T16:48:14.964Z",
+    "endTime": "2025-09-23T16:48:24.258Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "jobber-jobs:build:development",
       "target": "build",
       "projectName": "jobber-jobs",
-      "hash": "2686128576149096059",
-      "startTime": "2025-09-05T16:04:42.143Z",
-      "endTime": "2025-09-05T16:04:51.514Z",
+      "hash": "12523754940422105530",
+      "startTime": "2025-09-23T16:48:15.010Z",
+      "endTime": "2025-09-23T16:48:24.230Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

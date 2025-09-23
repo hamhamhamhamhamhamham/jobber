@@ -15,13 +15,17 @@ export class JwtStrategy extends PassportStrategy(Strategy){ // calling construc
     constructor(configService:ConfigService){
         super({            // calling parent constructor again to > provide configs to underlying layers
             jwtFromRequest:ExtractJwt.fromExtractors([
-                (request:Request) => request.cookies.AuthenticationToken,
+                //🔰 grapgQl request.cookies?.AuthenticationToken
+                //🔰 grpc : request.token
+                //🔰 type > any
+                (request:any) => request.cookies?.AuthenticationToken || request.token,
             ]),
             secretOrKey:configService.getOrThrow('JWT_SECRET')
         })
     }
     //👉 auto invoked to stick payload(userID) to traffic/request
     validate(payload:TokenPayload){
-        return payload  //✨return value is set to ctx.req.user(user is preset name) >> req.user = {userID:3}
+        //✨request.user(or ctx.req.user) is populated in request with payload value;
+        return payload  //✨user is preset name >> req.user = {userID:3,iat:1212,exp:923}
     }
 }
