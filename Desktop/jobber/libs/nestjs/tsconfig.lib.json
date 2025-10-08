@@ -5,7 +5,7 @@
     "declaration": true,
     "types": ["node"],
     "target": "es2021",
-    "module": "Node16",              // 👈 اضافه کن
+    "module": "node16",              // 👈 اضافه کن
     "strictNullChecks": true,
     "noImplicitAny": true,
     "strictBindCallApply": true,

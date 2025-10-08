@@ -1,1581 +1,2195 @@
 {
-  "apps/job-executor": {
+  "apps/auth": {
     "root": [
-      "apps/job-executor/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "projectType": [
-      "apps/job-executor/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets": [
-      "apps/job-executor/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build": [
-      "apps/job-executor/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options": [
-      "apps/job-executor/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.cache": [
-      "apps/job-executor/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.dependsOn": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.inputs": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.build.outputs": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.executor": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.cwd": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.options.args": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.command": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.metadata.technologies": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.technologies.0": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.description": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.help": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.help.command": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.metadata.help.example": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.continuous": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.executor": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options.cwd": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options.args": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.options.command": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.technologies": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.technologies.0": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.description": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.help": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.help.command": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.preview.metadata.help.example": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build-deps": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build-deps.dependsOn": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.continuous": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.dependsOn": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.executor": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.options": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.watch-deps.options.command": [
-      "apps/job-executor/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.lint": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "apps/job-executor/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.test": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.test.options": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.test.metadata": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.cache": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.inputs": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.outputs": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.executor": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options.cwd": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options.env": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.options.command": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.technologies": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.technologies.0": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.description": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.help": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.help.command": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "targets.test.metadata.help.example": [
-      "apps/job-executor/jest.config.ts",
-      "@nx/jest/plugin"
-    ],
-    "name": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "sourceRoot": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "tags": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.configurations": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.configurations.development": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.configurations.development.args": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.continuous": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.executor": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.defaultConfiguration": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.dependsOn": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.options": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.configurations": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.options.buildTarget": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.options.runBuildTargetDependencies": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.configurations.development": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.configurations.development.buildTarget": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.configurations.production": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.configurations.production.buildTarget": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.test.options.passWithNoTests": [
-      "apps/job-executor/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.assets": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.build.parallelism": [
-      "nx.json",
-      "nx/target-defaults"
-    ]
-  },
-  "apps/jobber-auth": {
-    "root": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "projectType": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets": [
-      "apps/jobber-auth/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.cache": [
-      "apps/jobber-auth/webpack.config.js",
-      "@nx/webpack/plugin"
-    ],
-    "targets.build.dependsOn": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.inputs": [
-      "nx.json",
-      "nx/target-defaults"
+      "apps/auth/webpack.config.js",
+      "@nx/webpack/plugin"
     ],
     "targets.build.outputs": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.executor": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.cwd": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.options.args": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.command": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.metadata.technologies": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.technologies.0": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.description": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.help": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.help.command": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.help.example": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.continuous": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.executor": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options.cwd": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options.args": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options.command": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.technologies": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.technologies.0": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.description": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.help": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.help.command": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.help.example": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build-deps": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build-deps.dependsOn": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.continuous": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.dependsOn": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.executor": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.options": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.options.command": [
-      "apps/jobber-auth/webpack.config.js",
+      "apps/auth/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.lint": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.inputs": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.outputs": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.executor": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.cwd": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.command": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies.0": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.description": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.command": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.example": [
-      "apps/jobber-auth/eslint.config.mjs",
+      "apps/auth/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.test": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.test.metadata": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.cache": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.inputs": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.outputs": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.executor": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.cwd": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.env": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.command": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.technologies": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.technologies.0": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.description": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help.command": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help.example": [
-      "apps/jobber-auth/jest.config.ts",
+      "apps/auth/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "name": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "sourceRoot": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "tags": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "apps/auth/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "apps/auth/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.development": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.development.args": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.continuous": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.executor": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.defaultConfiguration": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.dependsOn": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.buildTarget": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.runBuildTargetDependencies": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development.buildTarget": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production.buildTarget": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.test.dependsOn": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options.passWithNoTests": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma.options": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma.cache": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma.executor": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma.options.cwd": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma.options.input": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.generate-prisma.options.command": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.migrate-prisma": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.migrate-prisma.options": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.migrate-prisma.executor": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.migrate-prisma.options.cwd": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
     ],
     "targets.migrate-prisma.options.command": [
-      "apps/jobber-auth/project.json",
+      "apps/auth/project.json",
       "nx/core/project-json"
-    ],
-    "targets.generate-ts-proto": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.generate-ts-proto.executor": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.generate-ts-proto.options": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.generate-ts-proto.options.command": [
-      "apps/jobber-auth/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.assets": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.build.parallelism": [
-      "nx.json",
-      "nx/target-defaults"
     ]
   },
-  "apps/jobber-jobs": {
+  "apps/executor": {
     "root": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "projectType": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.cache": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.dependsOn": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.inputs": [
-      "nx.json",
-      "nx/target-defaults"
+      "apps/executor/webpack.config.js",
+      "@nx/webpack/plugin"
     ],
     "targets.build.outputs": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.executor": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.cwd": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.options.args": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.command": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.metadata.technologies": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.technologies.0": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.description": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.help": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.help.command": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build.metadata.help.example": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.continuous": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.executor": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options.cwd": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options.args": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.options.command": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.technologies": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.technologies.0": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.description": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.help": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.help.command": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.preview.metadata.help.example": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build-deps": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.build-deps.dependsOn": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.continuous": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.dependsOn": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.executor": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.options": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.watch-deps.options.command": [
-      "apps/jobber-jobs/webpack.config.js",
+      "apps/executor/webpack.config.js",
       "@nx/webpack/plugin"
     ],
     "targets.lint": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.inputs": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.outputs": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.executor": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.cwd": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.command": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies.0": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.description": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.command": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.example": [
-      "apps/jobber-jobs/eslint.config.mjs",
+      "apps/executor/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.test": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.test.metadata": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.cache": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.inputs": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.outputs": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.executor": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.cwd": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.env": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.command": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.technologies": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.technologies.0": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.description": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help.command": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help.example": [
-      "apps/jobber-jobs/jest.config.ts",
+      "apps/executor/jest.config.ts",
       "@nx/jest/plugin"
     ],
     "name": [
-      "apps/jobber-jobs/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "apps/jobber-jobs/project.json",
-      "nx/core/project-json"
-    ],
-    "sourceRoot": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "tags": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "apps/executor/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "apps/executor/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.development": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.development.args": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.continuous": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.executor": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.defaultConfiguration": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.dependsOn": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.buildTarget": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.runBuildTargetDependencies": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development.buildTarget": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production.buildTarget": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options.passWithNoTests": [
-      "apps/jobber-jobs/project.json",
+      "apps/executor/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "apps/jobs": {
+    "root": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.args": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.metadata.technologies": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/jobs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.lint": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "apps/jobs/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.metadata": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/jobs/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "apps/jobs/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.args": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "apps/jobs/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/graphql": {
+    "root": [
+      "libs/graphql/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/graphql/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.cache": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.args": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.continuous": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.executor": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.args": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies.0": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.description": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.example": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.continuous": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.dependsOn": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "libs/graphql/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.lint": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "libs/graphql/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/graphql/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/graphql/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/graphql/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/graphql/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/graphql/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/graphql/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/grpc": {
+    "root": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.inputs": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.args": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.continuous": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.executor": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.args": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies.0": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.description": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.example": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.continuous": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.dependsOn": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "libs/grpc/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.lint": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "libs/grpc/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/grpc/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/grpc/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/grpc/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.assets": [
-      "nx.json",
-      "nx/target-defaults"
-    ],
-    "targets.build.parallelism": [
-      "nx.json",
-      "nx/target-defaults"
-    ]
-  },
-  "apps/job-executor-e2e": {
-    "root": [
-      "apps/job-executor-e2e/project.json",
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "targets": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "apps/job-executor-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "name": [
-      "apps/job-executor-e2e/project.json",
+    "targets.generate-ts-proto": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "$schema": [
-      "apps/job-executor-e2e/project.json",
+    "targets.generate-ts-proto.options": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "projectType": [
-      "apps/job-executor-e2e/project.json",
+    "targets.generate-ts-proto.cache": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "implicitDependencies": [
-      "apps/job-executor-e2e/project.json",
+    "targets.generate-ts-proto.executor": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "implicitDependencies.job-executor": [
-      "apps/job-executor-e2e/project.json",
+    "targets.generate-ts-proto.options.cwd": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "targets.e2e": [
-      "apps/job-executor-e2e/project.json",
+    "targets.generate-ts-proto.options.input": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ],
-    "targets.e2e.executor": [
-      "apps/job-executor-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.outputs": [
-      "apps/job-executor-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options": [
-      "apps/job-executor-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.dependsOn": [
-      "apps/job-executor-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.jestConfig": [
-      "apps/job-executor-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.passWithNoTests": [
-      "apps/job-executor-e2e/project.json",
-      "nx/core/project-json"
-    ]
-  },
-  "apps/jobber-auth-e2e": {
-    "root": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "apps/jobber-auth-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "name": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "projectType": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies.jobber-auth": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.executor": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.outputs": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.dependsOn": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.jestConfig": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.passWithNoTests": [
-      "apps/jobber-auth-e2e/project.json",
-      "nx/core/project-json"
-    ]
-  },
-  "apps/jobber-jobs-e2e": {
-    "root": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "apps/jobber-jobs-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "name": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "projectType": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies.jobber-jobs": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.executor": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.outputs": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.dependsOn": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.jestConfig": [
-      "apps/jobber-jobs-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.passWithNoTests": [
-      "apps/jobber-jobs-e2e/project.json",
+    "targets.generate-ts-proto.options.command": [
+      "libs/grpc/project.json",
       "nx/core/project-json"
     ]
   },
@@ -1584,9 +2198,253 @@
       "libs/nestjs/project.json",
       "nx/core/project-json"
     ],
+    "projectType": [
+      "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ],
     "targets": [
-      "libs/nestjs/eslint.config.mjs",
-      "@nx/eslint/plugin"
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.cache": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.args": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.continuous": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.executor": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.args": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies.0": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.description": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.example": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.continuous": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.dependsOn": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "libs/nestjs/webpack.config.js",
+      "@nx/webpack/plugin"
     ],
     "targets.lint": [
       "libs/nestjs/eslint.config.mjs",
@@ -1724,16 +2582,446 @@
       "libs/nestjs/project.json",
       "nx/core/project-json"
     ],
-    "projectType": [
-      "libs/nestjs/project.json",
-      "nx/core/project-json"
-    ],
     "// targets": [
       "libs/nestjs/project.json",
       "nx/core/project-json"
     ],
     "tags": [
       "libs/nestjs/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/prisma": {
+    "root": [
+      "libs/prisma/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/prisma/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.cache": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.args": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.continuous": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.executor": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.args": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies.0": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.description": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.example": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.continuous": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.dependsOn": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "libs/prisma/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.lint": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "libs/prisma/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/prisma/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/prisma/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/prisma/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/prisma/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/prisma/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/prisma/project.json",
       "nx/core/project-json"
     ]
   },
@@ -1742,9 +3030,253 @@
       "libs/pulsar/project.json",
       "nx/core/project-json"
     ],
+    "projectType": [
+      "libs/pulsar/project.json",
+      "nx/core/project-json"
+    ],
     "targets": [
-      "libs/pulsar/eslint.config.mjs",
-      "@nx/eslint/plugin"
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.cache": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.inputs": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.outputs": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.executor": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.args": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.options.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.continuous": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.executor": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.args": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.options.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.technologies.0": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.description": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve.metadata.help.example": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.continuous": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.dependsOn": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.build-deps.dependsOn": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "libs/pulsar/webpack.config.js",
+      "@nx/webpack/plugin"
     ],
     "targets.lint": [
       "libs/pulsar/eslint.config.mjs",
@@ -1874,6 +3406,46 @@
       "libs/pulsar/project.json",
       "nx/core/project-json"
     ],
+    "tags": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "libs/pulsar/package.json",
+      "nx/core/package-json"
+    ],
     "$schema": [
       "libs/pulsar/project.json",
       "nx/core/project-json"
@@ -1882,131 +3454,9 @@
       "libs/pulsar/project.json",
       "nx/core/project-json"
     ],
-    "projectType": [
-      "libs/pulsar/project.json",
-      "nx/core/project-json"
-    ],
     "// targets": [
       "libs/pulsar/project.json",
       "nx/core/project-json"
-    ],
-    "tags": [
-      "libs/pulsar/project.json",
-      "nx/core/project-json"
-    ]
-  },
-  ".": {
-    "root": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "name": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "tags": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "tags.npm:private": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups.NPM Scripts": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups.NPM Scripts.0": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups.NPM Scripts.1": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js.packageName": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js.isInPackageManagerWorkspaces": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start.executor": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start.options": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start.metadata": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start.options.script": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start.metadata.scriptContent": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.start.metadata.runCommand": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.executor": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.metadata": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.inputs": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.cache": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.options": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.options.script": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.metadata.scriptContent": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.generate-ts-proto.metadata.runCommand": [
-      "package.json",
-      "nx/core/package-json"
     ]
   }
 }

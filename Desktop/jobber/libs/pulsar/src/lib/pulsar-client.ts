@@ -1,6 +1,6 @@
 import { Injectable, OnModuleDestroy } from "@nestjs/common";
-import {Client, Consumer, Message, Producer} from "pulsar-client"
-import {ConfigService} from "@nestjs/config"
+import { Client, Consumer, Message, Producer} from "pulsar-client"
+import { ConfigService} from "@nestjs/config"
 
 
 
@@ -8,7 +8,6 @@ import {ConfigService} from "@nestjs/config"
 // ✨ CONNECTION to SERVICE + DECLARATIONS
 @Injectable()
 export class PulsarClient implements OnModuleDestroy{
-
     // connect to PULSAR SERVICE(CLUSTER)
     private readonly client =new Client({
         serviceUrl:this.configService.getOrThrow<string>('PULSAR_SERVICE_URL') // .env which this class used/utilized > jobs
@@ -16,7 +15,6 @@ export class PulsarClient implements OnModuleDestroy{
     constructor(private readonly configService:ConfigService){
            console.log("FromPulsarClient constructor >",this.configService.getOrThrow<string>('PULSAR_SERVICE_URL'))
     }
-
     private producers:Producer[] = []
     private consumers:Consumer[] = []
     async createProducer(topic:string){  
@@ -26,8 +24,6 @@ export class PulsarClient implements OnModuleDestroy{
         this.producers.push(producer)
         return producer
     }
-
-    
     async createConsumer(topic:string,listener:(message:Message)=>void){
         const consumer=await this.client.subscribe({
             topic,   

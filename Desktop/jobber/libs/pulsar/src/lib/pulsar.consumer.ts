@@ -1,6 +1,6 @@
 import { Consumer, Message } from "pulsar-client";
 import { PulsarClient } from "./pulsar-client";
-import { deserialize } from "@pulsar-lib";
+import { deserialize } from "@jobber/pulsar";
 import { Logger } from "@nestjs/common";
 
 
