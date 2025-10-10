@@ -45,291 +45,87 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "README.md",
-        "hash": "2905625244463860092"
+        "file": ".dockerignore",
+        "hash": "17660601811996535461"
       },
       {
-        "file": ".gitignore",
-        "hash": "18435103667633526488"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4637156562308165301"
-      },
-      {
-        "file": "webpack.app.config.js",
-        "hash": "14971355493433715126"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".github/workflows/ci.yml",
-        "hash": "6599026094064816917"
-      },
-      {
-        "file": "docker-compose.yaml",
-        "hash": "5651595253275784243"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "3648152280552875957"
-      },
-      {
-        "file": "package.json",
-        "hash": "3724321435312507907"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
-      },
-      {
-        "file": "scripts/fibonacci.mjs",
-        "hash": "2084709941782860367"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
       },
       {
         "file": ".env",
         "hash": "13786709271225175360"
       },
       {
-        "file": "webpack.lib.config.js",
-        "hash": "8820461636820311968"
+        "file": ".github/workflows/ci.yml",
+        "hash": "2070703764700108004"
       },
       {
-        "file": "package-lock.json",
-        "hash": "18402313244195654573"
+        "file": ".gitignore",
+        "hash": "18435103667633526488"
       },
       {
-        "file": "nx.json",
-        "hash": "7003790434811314613"
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "README.md",
+        "hash": "2905625244463860092"
+      },
+      {
+        "file": "docker-compose.yaml",
+        "hash": "5651595253275784243"
       },
       {
         "file": "eslint.config.mjs",
         "hash": "11372415661648694734"
       },
       {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": "nx.json",
+        "hash": "7003790434811314613"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "18402313244195654573"
+      },
+      {
+        "file": "package.json",
+        "hash": "3724321435312507907"
+      },
+      {
+        "file": "scripts/fibonacci.mjs",
+        "hash": "2084709941782860367"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "3648152280552875957"
+      },
+      {
+        "file": "webpack.app.config.js",
+        "hash": "14971355493433715126"
+      },
+      {
+        "file": "webpack.lib.config.js",
+        "hash": "8820461636820311968"
       }
     ],
     "projectFileMap": {
-      "executor": [
-        {
-          "file": "apps/executor/.env",
-          "hash": "14307223004230206212"
-        },
-        {
-          "file": "apps/executor/Dockerfile",
-          "hash": "10128464778045415382"
-        },
-        {
-          "file": "apps/executor/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "apps/executor/jest.config.ts",
-          "hash": "18260991123703339995"
-        },
-        {
-          "file": "apps/executor/package.json",
-          "hash": "11999054839064728316"
-        },
-        {
-          "file": "apps/executor/project.json",
-          "hash": "4467939322409232587"
-        },
-        {
-          "file": "apps/executor/src/app/app.module.ts",
-          "hash": "8028566912276047164",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "nestjs"
-          ]
-        },
-        {
-          "file": "apps/executor/src/app/jobs/Fibonacci/fibonacci-consumers.provider.spec.ts",
-          "hash": "10130602649209601263",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/executor/src/app/jobs/Fibonacci/fibonacci-consumers.provider.ts",
-          "hash": "10294989253700816303",
-          "deps": [
-            "npm:@nestjs/common",
-            "pulsar",
-            "npm:fibonacci"
-          ]
-        },
-        {
-          "file": "apps/executor/src/app/jobs/Fibonacci/fibonacci-message-data.ts",
-          "hash": "12352229879623229632"
-        },
-        {
-          "file": "apps/executor/src/app/jobs/jobs.module.ts",
-          "hash": "10436303106906306012",
-          "deps": [
-            "npm:@nestjs/common",
-            "pulsar"
-          ]
-        },
-        {
-          "file": "apps/executor/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/executor/src/main.ts",
-          "hash": "3653037328374657880",
-          "deps": [
-            "npm:module-alias",
-            "npm:@nestjs/core",
-            "nestjs"
-          ]
-        },
-        {
-          "file": "apps/executor/tsconfig.app.json",
-          "hash": "14986804223625053091"
-        },
-        {
-          "file": "apps/executor/tsconfig.json",
-          "hash": "3490524966360018312"
-        },
-        {
-          "file": "apps/executor/tsconfig.spec.json",
-          "hash": "9439899413186274399"
-        },
-        {
-          "file": "apps/executor/webpack.config.js",
-          "hash": "8035493571380463561",
-          "deps": [
-            "npm:webpack-merge"
-          ]
-        }
-      ],
-      "nestjs": [
-        {
-          "file": "libs/nestjs/README.md",
-          "hash": "2262471044805060846"
-        },
-        {
-          "file": "libs/nestjs/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "libs/nestjs/jest.config.ts",
-          "hash": "6783217902793626073"
-        },
-        {
-          "file": "libs/nestjs/project.json",
-          "hash": "12590315033255750300"
-        },
-        {
-          "file": "libs/nestjs/src/index.ts",
-          "hash": "1688819464219014953"
-        },
-        {
-          "file": "libs/nestjs/src/lib/bootstrap/bootstrap.init.ts",
-          "hash": "17807044731532635735",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:nestjs-pino",
-            "npm:cookie-parser",
-            "npm:@nestjs/config"
-          ]
-        },
-        {
-          "file": "libs/nestjs/src/lib/bootstrap/index.ts",
-          "hash": "4659216269076772679"
-        },
-        {
-          "file": "libs/nestjs/src/lib/logger/index.ts",
-          "hash": "6460857715936312035"
-        },
-        {
-          "file": "libs/nestjs/src/lib/logger/logger.module.ts",
-          "hash": "14815831841842814786",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "npm:nestjs-pino"
-          ]
-        },
-        {
-          "file": "libs/nestjs/tsconfig.json",
-          "hash": "13388042237561572124"
-        },
-        {
-          "file": "libs/nestjs/tsconfig.lib.json",
-          "hash": "4310426556934041702"
-        },
-        {
-          "file": "libs/nestjs/tsconfig.spec.json",
-          "hash": "6622138706846345436"
-        },
-        {
-          "file": "libs/nestjs/webpack.config.js",
-          "hash": "12969011278666171984",
-          "deps": [
-            "npm:webpack-merge"
-          ]
-        }
-      ],
-      "prisma": [
-        {
-          "file": "libs/prisma/README.md",
-          "hash": "11665089717599422445"
-        },
-        {
-          "file": "libs/prisma/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "libs/prisma/jest.config.ts",
-          "hash": "17753731273708646243"
-        },
-        {
-          "file": "libs/prisma/package.json",
-          "hash": "2555092760792229274"
-        },
-        {
-          "file": "libs/prisma/project.json",
-          "hash": "13135192591566854133"
-        },
-        {
-          "file": "libs/prisma/src/index.ts",
-          "hash": "4055606894390288348"
-        },
-        {
-          "file": "libs/prisma/tsconfig.json",
-          "hash": "12975668481162286788"
-        },
-        {
-          "file": "libs/prisma/tsconfig.lib.json",
-          "hash": "8850325603424670976"
-        },
-        {
-          "file": "libs/prisma/tsconfig.spec.json",
-          "hash": "6622138706846345436"
-        },
-        {
-          "file": "libs/prisma/webpack.config.js",
-          "hash": "11481793008046386497",
-          "deps": [
-            "npm:webpack-merge"
-          ]
-        }
-      ],
       "jobs": [
         {
           "file": "apps/jobs/.env",
@@ -497,6 +293,217 @@
         {
           "file": "apps/jobs/webpack.config.js",
           "hash": "16468349157719039531",
+          "deps": [
+            "npm:webpack-merge"
+          ]
+        }
+      ],
+      "graphql": [
+        {
+          "file": "libs/graphql/README.md",
+          "hash": "3376825338908037833"
+        },
+        {
+          "file": "libs/graphql/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "libs/graphql/jest.config.ts",
+          "hash": "4654184528595856027"
+        },
+        {
+          "file": "libs/graphql/package.json",
+          "hash": "3684906515868594962",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/graphql/project.json",
+          "hash": "8726762560536190169"
+        },
+        {
+          "file": "libs/graphql/src/index.ts",
+          "hash": "3531786546505483962"
+        },
+        {
+          "file": "libs/graphql/src/lib/guards/gql-auth.guards.ts",
+          "hash": "8888523560974127125",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/graphql",
+            "npm:@nestjs/microservices",
+            "npm:rxjs",
+            "grpc"
+          ]
+        },
+        {
+          "file": "libs/graphql/src/lib/guards/index.ts",
+          "hash": "1599140277097137297"
+        },
+        {
+          "file": "libs/graphql/src/lib/interfaces/gql-context.interface.ts",
+          "hash": "3183008850529430019",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "libs/graphql/src/lib/interfaces/index.ts",
+          "hash": "3238903122260156253"
+        },
+        {
+          "file": "libs/graphql/src/lib/interfaces/token-payload.interface.ts",
+          "hash": "443572903844617668"
+        },
+        {
+          "file": "libs/graphql/src/lib/models/abstract.model.ts",
+          "hash": "3586584430351197539",
+          "deps": [
+            "npm:@nestjs/graphql"
+          ]
+        },
+        {
+          "file": "libs/graphql/src/lib/models/index.ts",
+          "hash": "5786362828138207576"
+        },
+        {
+          "file": "libs/graphql/src/lib/plugins/gql-logger.plugin.ts",
+          "hash": "15733627599812482200",
+          "deps": [
+            "npm:@apollo/server",
+            "npm:@nestjs/common",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "libs/graphql/tsconfig.json",
+          "hash": "14830842002428212520"
+        },
+        {
+          "file": "libs/graphql/tsconfig.lib.json",
+          "hash": "6380027826014075750"
+        },
+        {
+          "file": "libs/graphql/tsconfig.spec.json",
+          "hash": "9439899413186274399"
+        },
+        {
+          "file": "libs/graphql/webpack.config.js",
+          "hash": "8410951047459975827",
+          "deps": [
+            "npm:webpack-merge"
+          ]
+        }
+      ],
+      "grpc": [
+        {
+          "file": "libs/grpc/README.md",
+          "hash": "805628296224258215"
+        },
+        {
+          "file": "libs/grpc/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "libs/grpc/jest.config.ts",
+          "hash": "2778041624655663252"
+        },
+        {
+          "file": "libs/grpc/package.json",
+          "hash": "14846293203273284142"
+        },
+        {
+          "file": "libs/grpc/project.json",
+          "hash": "8137066884494627886"
+        },
+        {
+          "file": "libs/grpc/src/index.ts",
+          "hash": "9229933701219069523"
+        },
+        {
+          "file": "libs/grpc/src/lib/interceptors/grpc-logger.interceptor.ts",
+          "hash": "12004844908387917205",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:rxjs",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "libs/grpc/src/lib/proto/auth.proto",
+          "hash": "690909759666237752"
+        },
+        {
+          "file": "libs/grpc/src/lib/types/proto/auth.ts",
+          "hash": "4061863136196860382",
+          "deps": [
+            "npm:@nestjs/microservices",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/grpc/tsconfig.json",
+          "hash": "1796949256924893473"
+        },
+        {
+          "file": "libs/grpc/tsconfig.lib.json",
+          "hash": "6380027826014075750"
+        },
+        {
+          "file": "libs/grpc/tsconfig.spec.json",
+          "hash": "6622138706846345436"
+        },
+        {
+          "file": "libs/grpc/webpack.config.js",
+          "hash": "1335275551562512578",
+          "deps": [
+            "npm:webpack-merge"
+          ]
+        }
+      ],
+      "prisma": [
+        {
+          "file": "libs/prisma/README.md",
+          "hash": "11665089717599422445"
+        },
+        {
+          "file": "libs/prisma/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "libs/prisma/jest.config.ts",
+          "hash": "17753731273708646243"
+        },
+        {
+          "file": "libs/prisma/package.json",
+          "hash": "2555092760792229274"
+        },
+        {
+          "file": "libs/prisma/project.json",
+          "hash": "13135192591566854133"
+        },
+        {
+          "file": "libs/prisma/src/index.ts",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "libs/prisma/tsconfig.json",
+          "hash": "12975668481162286788"
+        },
+        {
+          "file": "libs/prisma/tsconfig.lib.json",
+          "hash": "8850325603424670976"
+        },
+        {
+          "file": "libs/prisma/tsconfig.spec.json",
+          "hash": "6622138706846345436"
+        },
+        {
+          "file": "libs/prisma/webpack.config.js",
+          "hash": "11481793008046386497",
           "deps": [
             "npm:webpack-merge"
           ]
@@ -767,67 +774,69 @@
           ]
         }
       ],
-      "grpc": [
+      "nestjs": [
         {
-          "file": "libs/grpc/README.md",
-          "hash": "805628296224258215"
+          "file": "libs/nestjs/README.md",
+          "hash": "2262471044805060846"
         },
         {
-          "file": "libs/grpc/eslint.config.mjs",
+          "file": "libs/nestjs/eslint.config.mjs",
           "hash": "2624537849564014525"
         },
         {
-          "file": "libs/grpc/jest.config.ts",
-          "hash": "2778041624655663252"
+          "file": "libs/nestjs/jest.config.ts",
+          "hash": "6783217902793626073"
         },
         {
-          "file": "libs/grpc/package.json",
-          "hash": "14846293203273284142"
+          "file": "libs/nestjs/project.json",
+          "hash": "12590315033255750300"
         },
         {
-          "file": "libs/grpc/project.json",
-          "hash": "8137066884494627886"
+          "file": "libs/nestjs/src/index.ts",
+          "hash": "1688819464219014953"
         },
         {
-          "file": "libs/grpc/src/index.ts",
-          "hash": "9229933701219069523"
-        },
-        {
-          "file": "libs/grpc/src/lib/interceptors/grpc-logger.interceptor.ts",
-          "hash": "12004844908387917205",
+          "file": "libs/nestjs/src/lib/bootstrap/bootstrap.init.ts",
+          "hash": "17807044731532635735",
           "deps": [
             "npm:@nestjs/common",
-            "npm:rxjs",
-            "npm:uuid"
+            "npm:nestjs-pino",
+            "npm:cookie-parser",
+            "npm:@nestjs/config"
           ]
         },
         {
-          "file": "libs/grpc/src/lib/proto/auth.proto",
-          "hash": "690909759666237752"
+          "file": "libs/nestjs/src/lib/bootstrap/index.ts",
+          "hash": "4659216269076772679"
         },
         {
-          "file": "libs/grpc/src/lib/types/proto/auth.ts",
-          "hash": "4061863136196860382",
+          "file": "libs/nestjs/src/lib/logger/index.ts",
+          "hash": "6460857715936312035"
+        },
+        {
+          "file": "libs/nestjs/src/lib/logger/logger.module.ts",
+          "hash": "14815831841842814786",
           "deps": [
-            "npm:@nestjs/microservices",
-            "npm:rxjs"
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:nestjs-pino"
           ]
         },
         {
-          "file": "libs/grpc/tsconfig.json",
-          "hash": "1796949256924893473"
+          "file": "libs/nestjs/tsconfig.json",
+          "hash": "13388042237561572124"
         },
         {
-          "file": "libs/grpc/tsconfig.lib.json",
-          "hash": "6380027826014075750"
+          "file": "libs/nestjs/tsconfig.lib.json",
+          "hash": "4310426556934041702"
         },
         {
-          "file": "libs/grpc/tsconfig.spec.json",
+          "file": "libs/nestjs/tsconfig.spec.json",
           "hash": "6622138706846345436"
         },
         {
-          "file": "libs/grpc/webpack.config.js",
-          "hash": "1335275551562512578",
+          "file": "libs/nestjs/webpack.config.js",
+          "hash": "12969011278666171984",
           "deps": [
             "npm:webpack-merge"
           ]
@@ -911,101 +920,96 @@
           ]
         }
       ],
-      "graphql": [
+      "executor": [
         {
-          "file": "libs/graphql/README.md",
-          "hash": "3376825338908037833"
+          "file": "apps/executor/.env",
+          "hash": "14307223004230206212"
         },
         {
-          "file": "libs/graphql/eslint.config.mjs",
+          "file": "apps/executor/Dockerfile",
+          "hash": "10128464778045415382"
+        },
+        {
+          "file": "apps/executor/eslint.config.mjs",
           "hash": "2624537849564014525"
         },
         {
-          "file": "libs/graphql/jest.config.ts",
-          "hash": "4654184528595856027"
+          "file": "apps/executor/jest.config.ts",
+          "hash": "18260991123703339995"
         },
         {
-          "file": "libs/graphql/package.json",
-          "hash": "3684906515868594962",
+          "file": "apps/executor/package.json",
+          "hash": "11999054839064728316"
+        },
+        {
+          "file": "apps/executor/project.json",
+          "hash": "4467939322409232587"
+        },
+        {
+          "file": "apps/executor/src/app/app.module.ts",
+          "hash": "8028566912276047164",
           "deps": [
             "npm:@nestjs/common",
-            "npm:@nestjs/microservices",
-            "npm:rxjs"
+            "npm:@nestjs/config",
+            "nestjs"
           ]
         },
         {
-          "file": "libs/graphql/project.json",
-          "hash": "8726762560536190169"
+          "file": "apps/executor/src/app/jobs/Fibonacci/fibonacci-consumers.provider.spec.ts",
+          "hash": "10130602649209601263",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
         },
         {
-          "file": "libs/graphql/src/index.ts",
-          "hash": "3531786546505483962"
-        },
-        {
-          "file": "libs/graphql/src/lib/guards/gql-auth.guards.ts",
-          "hash": "8888523560974127125",
+          "file": "apps/executor/src/app/jobs/Fibonacci/fibonacci-consumers.provider.ts",
+          "hash": "10294989253700816303",
           "deps": [
             "npm:@nestjs/common",
-            "npm:@nestjs/graphql",
-            "npm:@nestjs/microservices",
-            "npm:rxjs",
-            "grpc"
+            "pulsar",
+            "npm:fibonacci"
           ]
         },
         {
-          "file": "libs/graphql/src/lib/guards/index.ts",
-          "hash": "1599140277097137297"
+          "file": "apps/executor/src/app/jobs/Fibonacci/fibonacci-message-data.ts",
+          "hash": "12352229879623229632"
         },
         {
-          "file": "libs/graphql/src/lib/interfaces/gql-context.interface.ts",
-          "hash": "3183008850529430019",
+          "file": "apps/executor/src/app/jobs/jobs.module.ts",
+          "hash": "10436303106906306012",
           "deps": [
-            "npm:express"
-          ]
-        },
-        {
-          "file": "libs/graphql/src/lib/interfaces/index.ts",
-          "hash": "3238903122260156253"
-        },
-        {
-          "file": "libs/graphql/src/lib/interfaces/token-payload.interface.ts",
-          "hash": "443572903844617668"
-        },
-        {
-          "file": "libs/graphql/src/lib/models/abstract.model.ts",
-          "hash": "3586584430351197539",
-          "deps": [
-            "npm:@nestjs/graphql"
-          ]
-        },
-        {
-          "file": "libs/graphql/src/lib/models/index.ts",
-          "hash": "5786362828138207576"
-        },
-        {
-          "file": "libs/graphql/src/lib/plugins/gql-logger.plugin.ts",
-          "hash": "15733627599812482200",
-          "deps": [
-            "npm:@apollo/server",
             "npm:@nestjs/common",
-            "npm:uuid"
+            "pulsar"
           ]
         },
         {
-          "file": "libs/graphql/tsconfig.json",
-          "hash": "14830842002428212520"
+          "file": "apps/executor/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "libs/graphql/tsconfig.lib.json",
-          "hash": "6380027826014075750"
+          "file": "apps/executor/src/main.ts",
+          "hash": "3653037328374657880",
+          "deps": [
+            "npm:module-alias",
+            "npm:@nestjs/core",
+            "nestjs"
+          ]
         },
         {
-          "file": "libs/graphql/tsconfig.spec.json",
+          "file": "apps/executor/tsconfig.app.json",
+          "hash": "14986804223625053091"
+        },
+        {
+          "file": "apps/executor/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/executor/tsconfig.spec.json",
           "hash": "9439899413186274399"
         },
         {
-          "file": "libs/graphql/webpack.config.js",
-          "hash": "8410951047459975827",
+          "file": "apps/executor/webpack.config.js",
+          "hash": "8035493571380463561",
           "deps": [
             "npm:webpack-merge"
           ]
