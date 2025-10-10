@@ -45,70 +45,6 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".dockerignore",
-        "hash": "17660601811996535461"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".env",
-        "hash": "13786709271225175360"
-      },
-      {
-        "file": ".github/workflows/ci.yml",
-        "hash": "2070703764700108004"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "18435103667633526488"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4637156562308165301"
-      },
-      {
-        "file": "README.md",
-        "hash": "2905625244463860092"
-      },
-      {
-        "file": "docker-compose.yaml",
-        "hash": "5651595253275784243"
-      },
-      {
-        "file": "eslint.config.mjs",
-        "hash": "11372415661648694734"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "nx.json",
-        "hash": "7003790434811314613"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "18402313244195654573"
-      },
-      {
-        "file": "package.json",
-        "hash": "3724321435312507907"
-      },
-      {
         "file": "scripts/fibonacci.mjs",
         "hash": "2084709941782860367"
       },
@@ -117,12 +53,76 @@
         "hash": "3648152280552875957"
       },
       {
-        "file": "webpack.app.config.js",
-        "hash": "14971355493433715126"
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "17660601811996535461"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "18402313244195654573"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "package.json",
+        "hash": "3724321435312507907"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "9106245255654486515"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
       },
       {
         "file": "webpack.lib.config.js",
         "hash": "8820461636820311968"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "18435103667633526488"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7003790434811314613"
+      },
+      {
+        "file": "webpack.app.config.js",
+        "hash": "14971355493433715126"
+      },
+      {
+        "file": ".env",
+        "hash": "13786709271225175360"
+      },
+      {
+        "file": "docker-compose.yaml",
+        "hash": "5651595253275784243"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "README.md",
+        "hash": "2905625244463860092"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "11372415661648694734"
       }
     ],
     "projectFileMap": {
