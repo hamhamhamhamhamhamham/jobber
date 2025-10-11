@@ -8,7 +8,7 @@ on:
 
 permissions:
   actions: read
-  contents: read
+  contents:  write  # CHANGED: اضافه شد برای push کردن Docker images
 
 jobs:
   main:
@@ -64,6 +64,6 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.app }}:latest
 
       # Optional Nx CI fix
-      - run: npx nx fix-ci
-        working-directory: ./
-        if: always()
+      # - run: npx nx fix-ci
+      #   working-directory: ./
+      #   if: always()
