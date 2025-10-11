@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          cache-dependency-path: package-lock.json
       #protoc package 
       - name: Setup protoc
         uses: arduino/setup-protoc@v3.0.0
@@ -43,6 +44,7 @@ jobs:
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: npx nx-cloud record -- echo Hello World
       - run: npx nx affected -t lint test build
+        working-directory: ./  # 👈 مسیر root پروژه
       # Nx Cloud recommends fixes for failures to help you get CI green faster. Learn more: https://nx.dev/ci/features/self-healing-ci
 
        # Login to Docker Hub
@@ -63,4 +65,5 @@ jobs:
 
       # Optional Nx CI fix
       - run: npx nx fix-ci
+        working-directory: ./
         if: always()
