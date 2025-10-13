@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          cache-dependency-path: jobber/package-lock.json
       #protoc package 
       - name: Setup protoc
         uses: arduino/setup-protoc@v3.0.0
