@@ -17,27 +17,27 @@ jobs:
       matrix:
         app: [jobs, executor, auth]
     steps:
-      # CHANGED: Removed filter: tree:0 to get full repo for Nx workspace
+      # CHANGED: Checkout full repo without filter
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # NEW CHANGED: Verify package-lock.json exists before setup-node
+      # NEWEST CHANGED: Verify package-lock.json in jobber/ folder
       - name: Verify package-lock.json
         run: |
-          echo "Checking package-lock.json in root..."
-          if [ ! -f package-lock.json ]; then
-            echo "Error: package-lock.json not found in root!"
+          echo "Checking package-lock.json in jobber/..."
+          if [ ! -f jobber/package-lock.json ]; then
+            echo "Error: package-lock.json not found in jobber/!"
             exit 1
           fi
-          ls -la package-lock.json
+          ls -la jobber/package-lock.json
 
-      # CHANGED: Setup Node with correct cache-dependency-path
+      # NEWEST CHANGED: Setup Node with correct cache path for jobber/package-lock.json
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: jobber/package-lock.json
           always-auth: false
           check-latest: false
 
@@ -45,24 +45,25 @@ jobs:
       - name: Setup protoc
         uses: arduino/setup-protoc@v3.0.0
 
-      # CHANGED: npm ci must run after setup-node to install dependencies
+      # NEWEST CHANGED: npm install inside jobber folder
       - run: npm ci --legacy-peer-deps
+        working-directory: jobber
 
       - uses: nrwl/nx-set-shas@v4
 
-      # NEW CHANGED: Verify Nx workspace exists before running Nx commands
+      # NEWEST CHANGED: Verify Nx workspace exists in jobber
       - name: Verify Nx workspace
         run: |
-          echo "Checking Nx workspace files..."
-          if [ ! -f nx.json ]; then
-            echo "Error: nx.json not found, check your repo structure"
+          echo "Checking Nx workspace files in jobber/..."
+          if [ ! -f jobber/nx.json ]; then
+            echo "Error: nx.json not found in jobber/!"
             exit 1
           fi
-          ls -la nx.json
+          ls -la jobber/nx.json
 
-      # CHANGED: nx affected should work now because full workspace is checked out
+      # NEWEST CHANGED: Run nx affected inside jobber folder
       - run: npx nx affected -t lint test build
-        working-directory: ./  # NEW CHANGED: ensure commands run in root workspace
+        working-directory: jobber
 
       # Login to Docker Hub
       - name: Log in to Docker Hub
@@ -71,17 +72,16 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # Build and push Docker image
+      # NEWEST CHANGED: Build and push Docker image with context = jobber
       - name: Build and push ${{ matrix.app }} image
         uses: docker/build-push-action@v5
         with:
-          context: .  # root پروژه به عنوان build context
+          context: jobber
           file: ./apps/${{ matrix.app }}/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.app }}:latest
 
-      # Optional Nx CI fix
-      # CHANGED: This will now work because Nx workspace exists
+      # NEWEST CHANGED: Nx CI fix in correct folder
       - run: npx nx fix-ci
         if: always()
-        working-directory: ./  # NEW CHANGED: ensure nx workspace context
+        working-directory: jobber
