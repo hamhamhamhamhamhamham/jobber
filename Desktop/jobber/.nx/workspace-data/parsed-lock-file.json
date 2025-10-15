@@ -9778,9 +9778,9 @@
       "type": "npm",
       "name": "npm:pino",
       "data": {
-        "version": "10.0.0",
+        "version": "9.13.1",
         "packageName": "pino",
-        "hash": "sha512-eI9pKwWEix40kfvSzqEP6ldqOoBIN7dwD/o91TY5z8vQI12sAffpR/pOqAD1IVVwIVHDpHjkq0joBPdJD0rafA=="
+        "hash": "sha512-Szuj+ViDTjKPQYiKumGmEn3frdl+ZPSdosHyt9SnUevFosOkMY2b7ipxlEctNKPmMD/VibeBI+ZcZCJK+4DPuw=="
       }
     },
     "npm:pino-abstract-transport": {
@@ -9796,9 +9796,9 @@
       "type": "npm",
       "name": "npm:pino-http",
       "data": {
-        "version": "11.0.0",
+        "version": "10.5.0",
         "packageName": "pino-http",
-        "hash": "sha512-wqg5XIAGRRIWtTk8qPGxkbrfiwEWz1lgedVLvhLALudKXvg1/L2lTFgTGPJ4Z2e3qcRmxoFxDuSdMdMGNM6I1g=="
+        "hash": "sha512-hD91XjgaKkSsdn8P7LaebrNzhGTdB086W3pyPihX0EzGPjq5uBJBXo4N5guqNaK6mUjg9aubMF7wDViYek9dRA=="
       }
     },
     "npm:pino-pretty": {
@@ -11029,9 +11029,9 @@
       "type": "npm",
       "name": "npm:slow-redact",
       "data": {
-        "version": "0.3.1",
+        "version": "0.3.2",
         "packageName": "slow-redact",
-        "hash": "sha512-NvFvl1GuLZNW4U046Tfi8b26zXo8aBzgCAS2f7yVJR/fArN93mOqSA99cB9uITm92ajSz01bsu1K7SCVVjIMpQ=="
+        "hash": "sha512-MseHyi2+E/hBRqdOi5COy6wZ7j7DxXRz9NkseavNYSvvWC06D8a5cidVZX3tcG5eCW3NIyVU4zT63hw0Q486jw=="
       }
     },
     "npm:sockjs": {
@@ -23020,6 +23020,16 @@
     {
       "source": "npm:nestjs-pino",
       "target": "npm:@nestjs/common",
+      "type": "static"
+    },
+    {
+      "source": "npm:nestjs-pino",
+      "target": "npm:pino",
+      "type": "static"
+    },
+    {
+      "source": "npm:nestjs-pino",
+      "target": "npm:pino-http",
       "type": "static"
     },
     {

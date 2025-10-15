@@ -5,7 +5,10 @@ import {
   GraphQLRequestListener,
 } from "@apollo/server";
 import { Logger } from "@nestjs/common";
-const { v4 : uuidv4 } = require("uuid");
+(async () => {
+  const { v4: uuidv4 } = await import('uuid'); // support commonJs in docker-node&Nx-serve modes
+  console.log(uuidv4());
+})();
 
 
 //CUSTOM functionality to APOLLO SERVER(graphql traffic)

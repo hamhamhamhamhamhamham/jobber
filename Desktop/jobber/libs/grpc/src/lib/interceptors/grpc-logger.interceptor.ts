@@ -1,6 +1,9 @@
 import { CallHandler, ExecutionContext, Injectable, Logger, NestInterceptor } from "@nestjs/common";
 import { Observable, tap } from "rxjs";
-const { v4 : uuidv4 } = require("uuid");
+(async () => {
+  const { v4: uuidv4 } = await import('uuid'); // support commonJs in docker-node&Nx-serve modes
+  console.log(uuidv4());
+})();
 
 
 
