@@ -95,7 +95,7 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.app }}:latest
         continue-on-error: true
 
-      # C: Nx CI fix in root
+      # CCCC: Nx CI fix in root
       - run: npx nx fix-ci
         if: always()
         working-directory: .  # root repo
