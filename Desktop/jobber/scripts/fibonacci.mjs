@@ -1,7 +1,10 @@
 
 // modern js!
 
-const AUTH_API_URL = 'http://localhost:3000/graphql'
+
+console.log("CLI ARGS : ",process.argv)            // 🆕 get inputs through CLI!
+
+const AUTH_API_URL = process.argv[2] || 'http://localhost:3000/graphql'
 
 // JS  syntax different from gql! -> consider inner fn!!
 const LOGIN_MUTATION = `
@@ -13,7 +16,7 @@ const LOGIN_MUTATION = `
     }
 `
 
-const JOBS_API_URL = 'http://localhost:3001/graphql' 
+const JOBS_API_URL =process.argv[3] || 'http://localhost:3001/graphql'  // 🆕
 
 const EXECUTE_JOB_MUTAION = `mutation ExecuteJob($executeJobDto:ExecuteJobDto!){
             executeJob(executeJobDto:$executeJobDto){
@@ -68,8 +71,8 @@ async function sendRequestJobs(name,data,cookie){
 
 
    if(loginResponse?.data.login.id){
-        // 1000 messages
-      const jobsData = Array.from({ length :1000 },()=>({
+        // n message via CLI or  1000 messages as default!  🆕
+      const jobsData = Array.from({ length : parseInt(process.argv[4],10) || 1000 },()=>({
         iterations:Math.random()*1000
       }))
 

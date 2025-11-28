@@ -1,0 +1,32 @@
+
+
+{{- if .Values.executor.enabled }}
+apiVersion: apps/v1                   # deployment file info  
+kind: Deployment
+metadata:
+  name: executor
+  labels:
+    app: executor                           # deployment label for reference
+spec:
+  replicas: {{ .Values.executor.replicas }} # Number of pods/app instances for horizontal scaling
+  selector:
+    matchLabels:
+      app: executor
+  template:                            # POD info
+    metadata:
+      labels:
+        app: executor                      # Bind  pod to its deployment/this file
+    spec:
+      containers:                      # Docker containers/images assigned to POD,here: job image
+        - name: executor
+          image: {{ .Values.executor.image }}           
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}
+          ports:
+            - containerPort: {{ .Values.executor.port }} 
+          env:                         # ENV of executor app , CONNECTION STRINGS ,..  
+            {{- include "common.env" . | nindent 12 }} 
+            - name: PRODUCTS_GRPC_SERVICE_URL  # 🟡 grpc CLIENT
+              value: "products-grpc:{{ .Values.products.port.grpc }}"  # ‼️ gRPC-service + port : theHost:5000 : grpc server address in k8s 
+            - name: PORT
+              value: "{{ .Values.executor.port }}"  
+{{- end }}

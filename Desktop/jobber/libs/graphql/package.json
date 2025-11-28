@@ -1,6 +1,7 @@
 {
     "name": "@jobber/libs-graphql",
     "version": "1111",
+    
     "dependencies": {
       "@nestjs/common":"",
       "@nestjs/microservices":"",

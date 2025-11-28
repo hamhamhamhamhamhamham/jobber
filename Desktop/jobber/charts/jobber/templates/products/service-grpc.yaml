@@ -1,0 +1,17 @@
+
+{{- if .Values.products.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: products-grpc    # service name , just like  products deployment!
+  labels:
+    app: products   # reference to this service , just like  products deployment!
+spec:
+  type: ClusterIP                   
+  selector:
+      app: products
+  ports:
+    - protocol: TCP
+      port: {{ .Values.products.port.grpc }} #  service listens       
+      targetPort: {{ .Values.products.port.grpc }}  # provide GRPC NETWORK : pod listens
+{{- end }}

@@ -7,18 +7,17 @@ on:
   pull_request:
 
 permissions:
-  actions: read
-  contents: write  # لازم برای push کردن Docker images
+  actions: read  
+  contents: read
 
 jobs:
   main:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [jobs, executor, auth]
+        app: [jobs, executor, auth, products]
 
     steps:
-      # C: Checkout full repo without subtree filter
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -41,9 +40,6 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: ./package-lock.json
-          always-auth: false
-          check-latest: false
         continue-on-error: true
 
       # C: protoc package
@@ -53,28 +49,11 @@ jobs:
 
       # C: npm install in root
       - run: npm ci --legacy-peer-deps
-        working-directory: .  # root repo
-        continue-on-error: true
-
-      # C: Set Nx shas
       - uses: nrwl/nx-set-shas@v4
-        continue-on-error: true
-
-      # C: Verify Nx workspace exists in root
-      - name: Verify Nx workspace
-        run: |
-          echo "Checking Nx workspace files in root..."
-          if [ ! -f ./nx.json ]; then
-            echo "Warning: nx.json not found in root! Continuing..."
-            exit 0
-          fi
-          ls -la ./nx.json
-        shell: bash
-        continue-on-error: true
+      
 
       # C: Run nx affected in root
       - run: npx nx affected -t lint test build
-        working-directory: .  # root repo
         continue-on-error: true
 
       # C: Login to Docker Hub
@@ -95,8 +74,4 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.app }}:latest
         continue-on-error: true
 
-      # CCCC: Nx CI fix in root
-      - run: npx nx fix-ci
-        if: always()
-        working-directory: .  # root repo
-        continue-on-error: true
+      

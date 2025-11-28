@@ -1,6 +1,7 @@
 {
     "name": "@jobber/jobs",
     "version": "1111",
-    "dependencies": {},
-    "devDependencies": {}
+    "devDependencies": {
+        "@types/multer": "^2.0.0"
+    }
 }

@@ -1,0 +1,86 @@
+global:
+   imagePullPolicy: Always   # always pull latest v of image while pushing new image(new code) to dockerhub! 
+ 
+
+pulsar: # is dependency name to be fed into 
+   namespace: pulsar   #namespace pulsar installed! 
+   namespaceCreate: true
+   zookeeper: 
+      replicaCount: 1  # local-development k8s(SINGLE-node minikube) , production:FAULT-TOLERANCE
+      podMonitor:     # also
+         enabled: false
+   broker:
+      replicaCount: 1
+      podMonitor: 
+         enabled: false
+   bookkeeper:
+      replicaCount: 1
+      podMonitor:
+         enabled: false
+   autorecovery:
+      podMonitor:
+         enabled: false      
+   proxy: 
+      replicaCount: 1
+      podMonitor:
+         enabled: false
+   kube-prometheus-stack:  #disable for local-development k8s
+      enabled: false
+      prometheusOperator:
+         enabled: false
+      grafana:
+         enabled: false
+      alertmanager:
+         enabled: false
+      prometheus:
+         enabled: false                     
+
+
+postgresql:
+  namespaceOverride: postgresql
+
+  auth:
+    username: postgres
+    password: postgres
+   #  database: jobber  # 👀 when 1 db auto creation 
+  primary:          # 🎁 CREATE DATABASEs as postgres starts up (BITNAMI DATABASE ONLY)!
+    initdb:         # 🎁 delete namespace postgresql (delete it's pods), then create it> create db 
+      scripts:
+        create-dbs.sql: |
+          CREATE DATABASE jobber;
+          CREATE DATABASE products;
+jobs:
+   enabled: true
+   replicas: 1
+   image: 'h8h8h8/jobs'
+   port: 3001 
+
+executor:
+   enabled: true
+   replicas: 1
+   image: 'h8h8h8/executor'
+   port: 3002 
+
+auth:
+   enabled: true
+   # secret: dckr_pat_EEr_iOrpFdwQI4dbGBMxOCLhrw4 
+   replicas: 1
+   image: 'h8h8h8/auth'
+   port: 
+      http: 3000 # the app(auth) server on localhost://3000
+      grpc: 5000 # grpc server on localhost://5000 by default
+   jwt:
+      secret: #HEZ@M1M1DZAR@DRAEH!    
+      expiresInMs: 28800000
+      
+products:
+   enabled: true
+   # secret: dckr_pat_EEr_iOrpFdwQI4dbGBMxOCLhrw4 
+   replicas: 1
+   image: 'h8h8h8/products'
+   port: 
+      http: 3003 # the app(auth) server on localhost://3000
+      grpc: 5001 # grpc server on localhost://5000 by default
+   
+      
+

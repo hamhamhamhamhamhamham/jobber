@@ -1,9 +1,6 @@
 import { CallHandler, ExecutionContext, Injectable, Logger, NestInterceptor } from "@nestjs/common";
 import { Observable, tap } from "rxjs";
-(async () => {
-  const { v4: uuidv4 } = await import('uuid'); // support commonJs in docker-node&Nx-serve modes
-  console.log(uuidv4());
-})();
+// import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -16,7 +13,15 @@ export class GrpcLoggerInterceptor implements NestInterceptor{
         const handler = context.getHandler().name; // here : authenticate method inside controller class
         const args = context.getArgs()[0]  // extract sth are appended to request (here : jwt)
         const startTime = Date.now()
-        const requestId = uuidv4() // bond-correspond request&response of handler!
+
+          // Dynamic import of uuid
+        let requestId: string;
+        (async () => {
+            const { v4: uuidv4 } = await import('uuid');
+            requestId = uuidv4();
+        })();
+        requestId ||= 'temp-id-' + Math.floor(Math.random() * 1000000);
+         // bond-correspond request&response of handler!
 
         this.logger.log({
             requestId,

@@ -5,10 +5,6 @@ import {
   GraphQLRequestListener,
 } from "@apollo/server";
 import { Logger } from "@nestjs/common";
-(async () => {
-  const { v4: uuidv4 } = await import('uuid'); // support commonJs in docker-node&Nx-serve modes
-  console.log(uuidv4());
-})();
 
 
 //CUSTOM functionality to APOLLO SERVER(graphql traffic)
@@ -22,6 +18,8 @@ export class GqlLoggerPlugin implements ApolloServerPlugin<BaseContext> {
   ): Promise<GraphQLRequestListener<BaseContext>> {
     const { request } = requestContext;
     const start = Date.now();
+    // Dynamic import for uuid to support both CommonJS and ESM
+    const { v4: uuidv4 } = await import("uuid");
     const requestId = uuidv4() // bond-correspond request & response QUery or Mutation!
     
     this.logger.log({ 

@@ -1,0 +1,17 @@
+
+{{- if .Values.auth.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-http    # service name , just like  auth deployment!
+  labels:
+    app: auth   # reference to this service , just like  auth deployment!
+spec:
+  type: ClusterIP                   
+  selector:
+      app: auth
+  ports:
+    - protocol: TCP
+      port: {{ .Values.auth.port.http }}       # service listens
+      targetPort: {{ .Values.auth.port.http }} # provide http NETWORK : pod listens
+{{- end }}

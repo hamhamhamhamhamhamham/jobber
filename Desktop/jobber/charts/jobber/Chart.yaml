@@ -22,3 +22,13 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.16.0"
+
+#HELM CHARTS:docker-compose.yaml equvalent:pull containers from HELM-CHART-repositories!
+dependencies:      
+  - name: pulsar            #PULSAR HELM CHART
+    version: 3.7.0
+    repository: https://pulsar.apache.org/charts
+  - name: postgresql        #POSTGRES HELM CHART
+    version: 16.2.1
+    repository: https://charts.bitnami.com/bitnami
+    

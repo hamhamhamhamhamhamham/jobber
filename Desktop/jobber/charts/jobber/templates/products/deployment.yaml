@@ -1,0 +1,53 @@
+
+
+{{- if .Values.products.enabled }}
+apiVersion: apps/v1                     # deployment file info  
+kind: Deployment
+metadata:
+  name: products
+  labels:
+    app: products                           # deployment label for reference
+spec:
+  replicas: {{ .Values.products.replicas }} # Number of pods/app instances for horizontal scaling
+  selector:
+    matchLabels:
+      app: products
+  template:                             # POD info
+    metadata:
+      labels:
+        app: products                       # Bind  pod to its deployment/this file
+    spec:
+      initContainers:                   # init containers run before products container which is in a pod:
+        - name: drizzle-migrate        #🎁 drizzle MIGRATION
+          image: {{ .Values.products.image }}           
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}      
+          command: ["sh", "-c"]         # override Dockerfile/image run node command 
+          args:
+            - | 
+              cd apps/products && npx drizzle-kit migrate  
+          env:                          # ENV used in schema.prisma
+            {{- include "common.env" . | nindent 12 }}
+            - name: DATABASE_URL
+              value: postgres://postgres:postgres@{{ .Release.Name }}-postgresql.postgresql.svc.cluster.local:5432/products
+      containers:                       # Docker containers/images assigned to POD,here: job image
+        - name: products
+          image: {{ .Values.products.image }}           
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}
+          ports:
+            - containerPort: {{ .Values.products.port.http }} # app GQL Server Traffic listens on: localhost:3000
+            - containerPort: {{ .Values.products.port.grpc }} # GRPC Server TRAFFIC listens on:  localhost:5000 , default for local dev not on K8s
+          env:                          # ENV of products app , CONNECTION STRINGS ,..  
+            {{- include "common.env" . | nindent 12 }}
+            - name: DATABASE_URL
+              value: postgres://postgres:postgres@{{ .Release.Name }}-postgresql.postgresql.svc.cluster.local:5432/products
+            - name: PORT
+              value: "{{ .Values.products.port.http }}"  
+            - name: PRODUCTS_GRPC_SERVICE_URL  #💚 grpc SERVER
+              value: "0.0.0.0:{{ .Values.products.port.grpc }}"   #❤️ to accepts all types of domains, not just localhost!
+            
+{{- end }}
+
+
+
+
+

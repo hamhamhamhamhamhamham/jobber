@@ -1,258 +1,1437 @@
 {
   
-  "name": "@jobber/source",
-  
-  "version": "0.0.0",
-  
-  "license": "MIT",
-  
-  "scripts": {
-  
-    
-  "start": "npx nx run-many -t serve -p jobs auth executor"
-  
-  },
-  
-  "private": true,
-  
-  "workspaces": [
-  
-    
-  "apps/*",
-  
-    
-  "libs/*"
-  
-  ],
-  
-  "dependencies": {
-  
-    
-  "@apollo/server": "^4.12.2",
-  
-    
-  "@golevelup/nestjs-discovery": "^5.0.0",
-  
-    
-  "@grpc/grpc-js": "^1.13.4",
-  
-    
-  "@grpc/proto-loader": "^0.8.0",
-  
-    
-  "@nestjs/apollo": "^13.1.0",
-  
-    
-  "@nestjs/common": "^11.0.0",
-  
-    
-  "@nestjs/config": "^4.0.2",
-  
-    
-  "@nestjs/core": "^11.0.0",
-  
-    
-  "@nestjs/graphql": "^13.1.0",
-  
-    
-  "@nestjs/jwt": "^11.0.0",
-  
-    
-  "@nestjs/microservices": "^11.1.6",
-  
-    
-  "@nestjs/passport": "^11.0.5",
-  
-    
-  "@nestjs/platform-express": "^11.0.0",
-  
-    
-  "@prisma/client": "^6.15.0",
-  
-    
-  "axios": "^1.6.0",
-  
-    
-  "bcryptjs": "^3.0.2",
-  
-    
-  "class-transformer": "^0.5.1",
-  
-    
-  "class-validator": "^0.14.2",
-  
-    
-  "cookie-parser": "^1.4.7",
-  
-    
-  "fibonacci": "^1.6.12",
-  
-    
-  "graphql": "^16.11.0",
-  
-    
-  "graphql-type-json": "^0.3.2",
-  
-    
-  "module-alias": "^2.2.3",
-  
-    
-  "nestjs-pino": "^4.4.1",
-  
-    
-  "passport": "^0.7.0",
-  
-    
-  "passport-jwt": "^4.0.1",
-  
-    
-  "pino-http": "^10.5.0",
-  
-    
-  "pulsar-client": "^1.14.0",
-  
-    
-  "reflect-metadata": "^0.1.13",
-  
-    
-  "rxjs": "^7.8.0",
-  
-    
-  "ts-proto": "^2.7.7",
-  
-    
-  "uuid": "^13.0.0"
-  
-  },
-  
-  "_moduleAliases": {
-  
-    
-  "@jobber/graphql": "dist/libs/graphql/main",
-  
-    
-  "@jobber/grpc": "dist/libs/grpc/main",
-  
-    
-  "@jobber/nestjs": "dist/libs/nestjs/main",
-  
-    
-  "@jobber/prisma": "dist/libs/prisma/main",
-  
-    
-  "@jobber/pulsar": "dist/libs/pulsar/main"
-  
-  },
-  
-  "devDependencies": {
-  
-    
-  "@eslint/js": "^9.8.0",
-  
-    
-  "@nestjs/schematics": "^11.0.0",
-  
-    
-  "@nestjs/testing": "^11.0.0",
-  
-    
-  "@nx/eslint": "21.3.11",
-  
-    
-  "@nx/eslint-plugin": "21.3.11",
-  
-    
-  "@nx/jest": "21.3.11",
-  
-    
-  "@nx/js": "21.3.11",
-  
-    
-  "@nx/nest": "21.3.11",
-  
-    
-  "@nx/node": "21.3.11",
-  
-    
-  "@nx/web": "21.3.11",
-  
-    
-  "@nx/webpack": "21.3.11",
-  
-    
-  "@nx/workspace": "21.3.11",
-  
-    
-  "@swc-node/register": "~1.9.1",
-  
-    
-  "@swc/core": "~1.5.7",
-  
-    
-  "@swc/helpers": "~0.5.11",
-  
-    
-  "@types/bcryptjs": "^2.4.6",
-  
-    
-  "@types/cookie-parser": "^1.4.9",
-  
-    
-  "@types/jest": "^30.0.0",
-  
-    
-  "@types/node": "~18.16.9",
-  
-    
-  "@types/passport-jwt": "^4.0.1",
-  
-    
-  "eslint": "^9.8.0",
-  
-    
-  "eslint-config-prettier": "^10.0.0",
-  
-    
-  "jest": "^30.0.2",
-  
-    
-  "jest-environment-node": "^30.0.2",
-  
-    
-  "jest-util": "^30.0.2",
-  
-    
-  "nx": "21.3.11",
-  
-    
-  "pino-pretty": "^13.1.1",
-  
-    
-  "prettier": "^2.6.2",
-  
-    
-  "prisma": "^6.15.0",
-  
-    
-  "ts-jest": "^29.4.0",
-  
-    
-  "ts-node": "10.9.1",
-  
-    
-  "tslib": "^2.3.0",
-  
-    
-  "typescript": "~5.8.2",
-  
-    
-  "typescript-eslint": "^8.29.0",
-  
-    
-  "webpack-cli": "^5.1.4",
-  
-    
-  "webpack-merge": "^6.0.1"
-  
-  }
+
+
+
+
+
+
+
+"name": "@jobber/source",
+  
+
+
+
+
+
+
+
+"version": "0.0.0",
+  
+
+
+
+
+
+
+
+"license": "MIT",
+  
+
+
+
+
+
+
+
+"scripts": {
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"start": "npx nx run-many -t serve -p jobs auth executor products --parallel 4"
+  
+
+
+
+
+
+
+
+},
+  
+
+
+
+
+
+
+
+"private": true,
+  
+
+
+
+
+
+
+
+"workspaces": [
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"apps/*",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"libs/*"
+  
+
+
+
+
+
+
+
+],
+  
+
+
+
+
+
+
+
+"dependencies": {
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@apollo/server": "^4.12.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@golevelup/nestjs-discovery": "^5.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@grpc/grpc-js": "^1.13.4",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@grpc/proto-loader": "^0.8.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/apollo": "^13.1.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/common": "^11.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/config": "^4.0.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/core": "^11.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/graphql": "^13.1.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/jwt": "^11.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/microservices": "^11.1.6",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/passport": "^11.0.5",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/platform-express": "^11.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@prisma/client": "^6.15.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"apollo-server-express": "^3.13.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"axios": "^1.6.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"bcryptjs": "^3.0.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"class-transformer": "^0.5.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"class-validator": "^0.14.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"cookie-parser": "^1.4.7",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"fibonacci": "^1.6.12",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"graphql": "^16.11.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"graphql-type-json": "^0.3.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"module-alias": "^2.2.3",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"nestjs-pino": "^4.4.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"passport": "^0.7.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"passport-jwt": "^4.0.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"pino-http": "^10.5.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"pulsar-client": "^1.14.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"reflect-metadata": "^0.1.13",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"rxjs": "^7.8.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"ts-proto": "^2.7.7",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"uuid": "^13.0.0"
+  
+
+
+
+
+
+
+
+},
+  
+
+
+
+
+
+
+
+"_moduleAliases": {
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@jobber/graphql": "dist/libs/graphql/main",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@jobber/grpc": "dist/libs/grpc/main",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@jobber/nestjs": "dist/libs/nestjs/main",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@jobber/prisma": "dist/libs/prisma/main",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@jobber/pulsar": "dist/libs/pulsar/main"
+  
+
+
+
+
+
+
+
+},
+  
+
+
+
+
+
+
+
+"devDependencies": {
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@eslint/js": "^9.8.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/schematics": "^11.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nestjs/testing": "^11.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/eslint": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/eslint-plugin": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/jest": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/js": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/nest": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/node": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/web": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/webpack": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@nx/workspace": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@swc-node/register": "~1.9.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@swc/core": "~1.5.7",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@swc/helpers": "~0.5.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@types/bcryptjs": "^2.4.6",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@types/cookie-parser": "^1.4.9",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@types/jest": "^30.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@types/node": "~18.16.9",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"@types/passport-jwt": "^4.0.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"eslint": "^9.8.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"eslint-config-prettier": "^10.0.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"jest": "^30.0.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"jest-environment-node": "^30.0.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"jest-util": "^30.0.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"nx": "21.3.11",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"pino-pretty": "^13.1.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"prettier": "^2.6.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"prisma": "^6.15.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"ts-jest": "^29.4.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"ts-node": "10.9.1",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"tslib": "^2.3.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"typescript": "~5.8.2",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"typescript-eslint": "^8.29.0",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"webpack-cli": "^5.1.4",
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+"webpack-merge": "^6.0.1"
+  
+
+
+
+
+
+
+
+}
 }

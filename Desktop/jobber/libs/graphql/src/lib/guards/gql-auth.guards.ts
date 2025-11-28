@@ -4,7 +4,7 @@ import { GqlExecutionContext } from "@nestjs/graphql";
 import { ClientGrpc } from "@nestjs/microservices";
 import { catchError, map, Observable, of } from "rxjs";
 
-import  {AUTH_PACKAGE_NAME, AUTH_SERVICE_NAME, AuthServiceClient} from "@jobber/grpc"
+import  {PackageName, AUTH_SERVICE_NAME, AuthServiceClient} from "@jobber/grpc"
 
 
 
@@ -12,16 +12,16 @@ import  {AUTH_PACKAGE_NAME, AUTH_SERVICE_NAME, AuthServiceClient} from "@jobber/
 @Injectable()
 export class GqlAuthGuard implements CanActivate,OnModuleInit{
     private readonly logger= new Logger(GqlAuthGuard.name) // console logger!!!!
-    private authService:AuthServiceClient;
+    private authService:AuthServiceClient;   // 🎁1
     
     constructor(
-         @Inject(AUTH_PACKAGE_NAME)
-         private client:ClientGrpc   ////چه کلاینتی ->which microservice? > SENDER
-    ){console.log("constructor GqlAuthGuard:lib",AUTH_PACKAGE_NAME)}
+         @Inject(PackageName.AUTH)
+         private client:ClientGrpc  //2🎁  //// چه کلاینتی ->which microservice? > SENDER
+    ){console.log("constructor GqlAuthGuard:lib",PackageName.AUTH)}
     //1. onModuleInit > initializing کلاینت
    onModuleInit() {
       this.logger.log(`onModuleInit GqlAuthGuard:lib? ${!!this.authService}`);
-      this.authService=  this.client.getService<AuthServiceClient>(AUTH_SERVICE_NAME)
+      this.authService=  this.client.getService<AuthServiceClient>(AUTH_SERVICE_NAME) //🎁1,2
       this.logger.log(`AuthService initialized? ${!!this.authService}`);
     }
     
@@ -37,6 +37,7 @@ export class GqlAuthGuard implements CanActivate,OnModuleInit{
             return false // resolver query won't execute
         }
         
+        //🎁 last call rpc fn to send request!
         //👉🏻 SEND REQUEST TO AUTH MICROSERVICE(CONTROLLER block) : to verify jwt
         return this.authService.authenticate({token}).pipe(  //pipe on ObservableZ
             map((res)=>{  

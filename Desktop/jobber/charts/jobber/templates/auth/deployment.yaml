@@ -1,0 +1,57 @@
+
+
+{{- if .Values.auth.enabled }}
+apiVersion: apps/v1                     # deployment file info  
+kind: Deployment
+metadata:
+  name: auth
+  labels:
+    app: auth                           # deployment label for reference
+spec:
+  replicas: {{ .Values.auth.replicas }} # Number of pods/app instances for horizontal scaling
+  selector:
+    matchLabels:
+      app: auth
+  template:                             # POD info
+    metadata:
+      labels:
+        app: auth                       # Bind  pod to its deployment/this file
+    spec:
+      initContainers:                   # init containers run before auth container which is in a pod:
+        - name: prisma-migrate
+          image: {{ .Values.auth.image }}           
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}      
+          command: ["sh", "-c"]         # override Dockerfile/image run node command 
+          args:
+            - | 
+              npx prisma migrate deploy --schema=apps/auth/prisma/schema.prisma
+          env:                          # ENV used in schema.prisma
+            {{- include "common.env" . | nindent 12 }}
+            - name: DATABASE_URL
+              value: postgres://postgres:postgres@{{ .Release.Name }}-postgresql.postgresql.svc.cluster.local:5432/jobber
+      containers:                       # Docker containers/images assigned to POD,here: job image
+        - name: auth
+          image: {{ .Values.auth.image }}           
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}
+          ports:
+            - containerPort: {{ .Values.auth.port.http }} # app GQL Server Traffic listens on: localhost:3000
+            - containerPort: {{ .Values.auth.port.grpc }} # GRPC Server TRAFFIC listens on:  localhost:5000 , default for local dev not on K8s
+          env:                          # ENV of auth app , CONNECTION STRINGS ,..  
+            {{- include "common.env" . | nindent 12 }}
+            - name: DATABASE_URL
+              value: postgres://postgres:postgres@{{ .Release.Name }}-postgresql.postgresql.svc.cluster.local:5432/jobber
+            - name: PORT
+              value: "{{ .Values.auth.port.http }}" 
+            - name: JWT_SECRET
+              value: "{{ .Values.auth.jwt.secret }}"
+            - name: JWT_EXPIRES_IN_MS
+              value: "{{ .Values.auth.jwt.expiresInMs }}"  
+            - name: AUTH_GRPC_SERVICE_URL    #💚 grpc SERVER
+              value: "0.0.0.0:{{ .Values.auth.port.grpc }}" #❤️ to accept all types of domains, not just localhost!
+            
+{{- end }}
+
+
+
+
+

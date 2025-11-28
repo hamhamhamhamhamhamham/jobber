@@ -1,0 +1,17 @@
+
+{{- if .Values.auth.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-grpc    # service name , just like  auth deployment!
+  labels:
+    app: auth   # reference to this service , just like  auth deployment!
+spec:
+  type: ClusterIP                   
+  selector:
+      app: auth
+  ports:
+    - protocol: TCP
+      port: {{ .Values.auth.port.grpc }} #  service listens       
+      targetPort: {{ .Values.auth.port.grpc }}  # provide GRPC NETWORK : pod listens
+{{- end }}

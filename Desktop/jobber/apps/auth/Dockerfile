@@ -2,6 +2,10 @@
 # STAGE 1 : BUILDING( dist , node_modules )
 FROM  node:18-slim AS builder 
 WORKDIR /workspace
+
+# SSL package required for prisma to work at run time!
+RUN apt-get update && apt-get install -y openssl
+
 COPY package*.json ./
 COPY nx.json ./
 COPY tsconfig*.json ./
@@ -19,7 +23,14 @@ RUN apt-get update && apt-get install -y protobuf-compiler
 RUN npx nx build auth
 #STAGE 2-Image2  > use BUILTz + NODEJS works by Docker Command
 FROM node:18-slim AS runner
+
+# SSL package required for prisma to work at run time!
+RUN apt-get update && apt-get install -y openssl
+
 WORKDIR /app
+
+# 💎 PRISMA MIGRATION FILES
+COPY --from=builder /workspace/apps/auth/prisma ./apps/auth/prisma
 COPY --from=builder /workspace/package.json ./
 COPY --from=builder /workspace/apps/auth/package.json ./apps/auth/package.json
 COPY --from=builder /workspace/libs/graphql/package.json ./libs/graphql/package.json
@@ -28,6 +39,7 @@ COPY --from=builder /workspace/libs/prisma/package.json ./libs/prisma/package.js
 COPY --from=builder /workspace/package-lock.json ./
 ENV NODE_ENV=production
 RUN npm ci 
+# 💎 PRISMA Types(Prisma CLient) -> Prisma at run time!
 COPY --from=builder /workspace/node_modules/@prisma-clients/auth ./node_modules/@prisma-clients/auth
 # compiled JS(the app and libs in js format)
 COPY --from=builder /workspace/dist ./dist

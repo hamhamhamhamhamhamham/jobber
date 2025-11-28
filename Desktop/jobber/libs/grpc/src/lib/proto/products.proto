@@ -1,0 +1,22 @@
+
+syntax = "proto3";
+package products; 
+
+//ار-پی-سی فانکشن :
+// input data> from client-> grpcServer (incoming request)
+// output data> grpcServer(response)!
+// both by calling this rpc method!
+service ProductsService {
+    rpc createProduct(CreateProductRequest) returns (CreateProductResponse);
+}
+
+message CreateProductRequest {
+ string name= 1;   
+ string category= 2;
+ float price= 3;
+ int32 stock= 4;
+ float rating= 5;
+ string description= 6;
+}
+
+message CreateProductResponse {}

@@ -1,0 +1,23 @@
+
+{{- if .Values.jobs.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: jobs    # service name , just like  jobs deployment!
+  labels:
+    app: jobs   # reference to this service , just like  jobs deployment!
+spec:
+  type: ClusterIP                   
+  selector:
+      app: jobs
+  ports:
+    - protocol: TCP
+      port: {{ .Values.jobs.port }} #
+      targetPort: {{ .Values.jobs.port }} 
+{{- end }}
+
+     # ClusterIP exposes the traffics  inside CLUSTER
+     # LoadBalancer & Ingres exposes the traffic Outside the CLUSTER
+     # selector : where the traffic should go which is being forwarded to this service : any pods with this label
+     # port : PORT opens up on this Service, where the cluster traffic goes to
+     # targetPort:  expose service traffic to                      

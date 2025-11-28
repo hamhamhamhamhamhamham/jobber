@@ -1,0 +1,45 @@
+{{/* 
+〽️RESOURCES FOR KUBERNETES - Microservices IMAGES (pull from DockerHub)
+〽️deployment.yaml -> Predefined manifest name for Kubernetes POD management
+🅿️🅾️DS are in namespace "jobber"
+🅿️⭕d -> containers ->  images to run-> multiple instances of application(image) -> multiple run of development.yaml
+3 images -> 3 containers
+*/}}
+
+{{- if .Values.jobs.enabled }}
+apiVersion: apps/v1                   # deployment file info  
+kind: Deployment
+metadata:
+  name: jobs
+  labels:
+    app: jobs                           # deployment label for reference
+spec:
+  replicas: {{ .Values.jobs.replicas }} # Number of pods/app instances for horizontal scaling
+  selector:
+    matchLabels:
+      app: jobs
+  template:                            # POD info
+    metadata:
+      labels:
+        app: jobs                      # Bind  pod to its deployment/this file
+    spec:
+      containers:                      # Docker containers/images assigned to POD,here: job image
+        - name: jobs
+          image: {{ .Values.jobs.image }}           
+          imagePullPolicy: {{ .Values.global.imagePullPolicy }}
+          volumeMounts:
+            - name: uploads-volume
+              mountPath: /app/apps/jobs/uploads # 🌹 VOLUMe DATA - files!
+          ports:
+            - containerPort: {{ .Values.jobs.port }} 
+          env:                         # ENV of jobs app , CONNECTION STRINGS ,..  
+            {{- include "common.env" . | nindent 12 }}
+            - name: AUTH_GRPC_SERVICE_URL   # 🟡 grpc CLIENT
+              value: "auth-grpc:{{ .Values.auth.port.grpc }}"  # ‼️ gRPC-service + port : theHost:5000 : grpc server address in k8s cluster
+            - name: PORT
+              value: "{{ .Values.jobs.port }}"  
+      volumes:  #🌹
+        - name: uploads-volume
+          persistentVolumeClaim:
+            claimName: uploads-pvc        
+{{- end }}

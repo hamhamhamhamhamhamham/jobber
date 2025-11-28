@@ -1,16 +1,18 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { PulsarClient } from '@jobber/pulsar';
+import { FibonacciMessage, PulsarClient } from '@jobber/pulsar';
 import { PulsarConsumer } from '@jobber/pulsar';
 import fibonacci from 'fibonacci';
-import { FibonacciData } from './fibonacci-message-data';
+import { Jobs } from '@jobber/nestjs';
+
 @Injectable()
-export class FibonacciConsumersProvider extends PulsarConsumer<FibonacciData> implements OnModuleInit {
+export class FibonacciConsumersProvider extends PulsarConsumer<FibonacciMessage> implements OnModuleInit {
     constructor(pulsarClient:PulsarClient){
-        super(pulsarClient,"Fibonacci")
+        super(pulsarClient,Jobs.FIBONACCI)
     } 
 
   private count = 0;
-  protected async onMessage(data: FibonacciData): Promise<void> { // will be invoked auto by pulsar when new message produced
+  //PROUCER.SEND to (as backlog) this starts consuming from backlog!
+  protected async onMessage(data: FibonacciMessage): Promise<void> { 
  
      console.log("onMessage fn invoked:FibonacciConsumersProvider!")
      const fiboFormattedData = fibonacci.iterate(data.iterations)
